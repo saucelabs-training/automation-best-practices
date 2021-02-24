@@ -38,3 +38,7 @@ it('loads', ()=>{
 
 🏋️‍♀️ Stop the application and rerun the test
 Confirms rendering works as expected
+
+## Can we test the same thing through a component test?
+
+* Add new folder called component
