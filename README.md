@@ -3,7 +3,6 @@ This is an Automation Best Practices workshop designed to teach testing through 
 
 # ⚙️ Pre-requisites
 
-
 * Run `npm install` in root directory
 * `npm run start:react` to start react app
 * Open application at http://localhost:3000/
