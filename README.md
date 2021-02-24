@@ -18,10 +18,9 @@ This is an Automation Best Practices workshop designed to teach testing through 
 
 ```js
 /// <reference types="cypress" />
-
-it('loads', ()=>{
+it('loads', ()=> {
     cy.visit('http://localhost:3000')
-    cy.get('.new-todo').should('be.visible')
+    cy.get('.App-link').should('be.visible')
 })
 ```
 
@@ -40,4 +39,10 @@ Confirms rendering works as expected
 
 ## Can we test the same thing through a component test?
 
-* Add new folder called component
+```js
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
+});
+```
