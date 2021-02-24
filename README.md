@@ -6,6 +6,8 @@ This is an Automation Best Practices workshop designed to teach testing through 
 * Run `npm install` in root directory
 * `npm run start:react` to start react app
 * Open application at http://localhost:3000/
+* Sign up for a free [Sauce account](https://saucelabs.com/sign-up)
+* Sign up for a free [Screener account](https://screener.io/)
 
 ## What is the most basic test that we can write for our application?
 * How about making sure that our app renders?
@@ -46,3 +48,19 @@ test('renders learn react link', () => {
   expect(linkElement).toBeInTheDocument();
 });
 ```
+
+## How do we check to make sure that the app looks as expected on web and mobile?
+
+* Using visual testing
+* Add a wdio test
+
+```js
+describe('My React application', () => {
+    it('should look correct', () => {
+        browser.url(`/`);
+        browser.execute('/*@visual.init*/', 'My React App');
+        browser.execute('/*@visual.snapshot*/', 'Home Page');
+    });
+});
+```
+* Add Sauce Connect
