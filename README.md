@@ -63,4 +63,25 @@ describe('My React application', () => {
     });
 });
 ```
-* Add Sauce Connect
+* Add Sauce Connect, Not working yet!
+
+### 🏋️‍♀️ Expand the config to cover iOS and Android
+
+In today's day and age, everything must be responsive, so let's make sure that our app looks good on iOS web.
+Hint, use these capabilities:
+
+```js
+        //iphone X
+        {
+            browserName: 'safari',
+            platformName: 'macOS 10.15',
+            browserVersion: 'latest',
+            'sauce:options': {
+                ...sauceOptions,
+            },
+            'sauce:visual': {
+                ...visualOptions,
+                viewportSize: '375x812'
+            }
+        }
+```
