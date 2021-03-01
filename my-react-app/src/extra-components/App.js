@@ -1,10 +1,22 @@
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <div id="root">
-      ReactDOM.render(element, document.getElementById('root'));
-    </div>
-  );
+class App extends Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      foo: 'bar',
+      resumeData: {}
+    };
+  }
+
+
+  render() {
+    return (
+      <div className="App">
+      </div>
+    );
+  }
 }
 
 export default App;

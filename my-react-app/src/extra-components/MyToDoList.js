@@ -1,10 +1,12 @@
 //https://www.freecodecamp.org/learn/front-end-libraries/react/use-array-map-to-dynamically-render-elements
+import React, { Component } from 'react';
+
 const textAreaStyles = {
     width: 235,
     margin: 5
   };
   
-  class MyToDoList extends React.Component {
+  class MyToDoList extends Component {
     constructor(props) {
       super(props);
       this.state = {
@@ -44,3 +46,5 @@ const textAreaStyles = {
       );
     }
   }
+
+  export default MyToDoList;
