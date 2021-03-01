@@ -98,6 +98,10 @@ We're going to update the React image to something better. What tests should bre
 * Rerun the visual tests with `npm run test:visual`
 * Analyze the results in Screener dashboard
 
+## How setup CI
+
+Let's add this code to our CI system.
+
 ## How to check code coverage
 
 https://create-react-app.dev/docs/running-tests

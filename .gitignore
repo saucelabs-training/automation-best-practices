@@ -102,3 +102,4 @@ dist
 
 # TernJS port file
 .tern-port
+my-react-app/cypress/videos/e2e/*.mp4

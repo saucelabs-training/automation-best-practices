@@ -18,6 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "cy:open": "cypress open",
+    "cy:ci": "cypress run",
     "test:visual": "wdio run ./wdio.conf.js"
   },
   "eslintConfig": {
