@@ -85,3 +85,20 @@ Hint, use these capabilities:
             }
         }
 ```
+
+### 🤔🏋️‍♀️🛑 Let's change our image, what tests should that break?
+
+We're going to update the React image to something better. What tests should break?
+
+* Drag n drop a new image to the `/src`
+* Fix the path to be correct here `import logo from './mia.jpg';` in `App.js`
+* Save all files
+* Stop the app
+* Restart the app with `npm start`
+* Rerun the visual tests with `npm run test:visual`
+* Analyze the results in Screener dashboard
+
+## How to check code coverage
+
+https://create-react-app.dev/docs/running-tests
+`npm test -- --coverage`

@@ -60,6 +60,18 @@ exports.config = {
                 ...visualOptions
             }
         },
+        {
+            browserName: 'safari',
+            platformName: 'macOS 10.15',
+            browserVersion: 'latest',
+            'sauce:options': {
+                ...sauceOptions,
+            },
+            'sauce:visual': {
+                ...visualOptions,
+                viewportSize: '375x812'
+            }
+        }
     ],
     // Level of logging verbosity: trace | debug | info | warn | error | silent
     logLevel: 'info',
