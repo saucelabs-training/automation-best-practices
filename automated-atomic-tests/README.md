@@ -19,7 +19,7 @@ import {LOGIN_USERS} from "../support/e2eConstants";
 
 describe('Shopping cart', () => {
     beforeEach(() => {
-        cy.visit('');
+        cy.visit('https://www.saucedemo.com/v1');
         cy.window().then((win) => {
             win.sessionStorage.clear()
           });
@@ -34,4 +34,15 @@ describe('Shopping cart', () => {
 });
 ```
 
-### 
+### 🏋️‍♀️ Breaking up the test
+
+We're going to break down this test into atomic ones.
+
+❓So how many tests is this really❓
+
+🏋️‍♀️ Code a suite of atomic tests
+
+1. cd `automated-atomic-tests` and `npm install`
+2. Go to the `cypress/integration/automated-atomic-tests/exercise` directory
+3. Create spec files to cover all of the features
+4. There's a hint for how to handle the login in `spec.js`
