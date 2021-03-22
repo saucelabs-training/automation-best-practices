@@ -46,3 +46,4 @@ We're going to break down this test into atomic ones.
 2. Go to the `cypress/integration/automated-atomic-tests/exercise` directory
 3. Create spec files to cover all of the features
 4. There's a hint for how to handle the login in `spec.js`
+
