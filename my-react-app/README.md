@@ -1,3 +1,136 @@
+#Full Coverage Testing
+
+Open application at http://localhost:3000/
+
+## 🧪Testing Strategy
+
+| Expected Behavior  | Test Type  | Test Name  |
+|---|---|---|
+| Application renders  |  |   |
+| App looks as expected on web and mobile  |   |   |
+| Learn React link works  |   |   |
+| Front-end performance is at least a B  |   |   |
+
+## What is the most basic test that we can write for our application?
+* How about making sure that our app renders?
+
+`npm run cy:open`
+
+* Delete the content in the the integration folder 
+* Add e2e folder
+* Create a new test
+
+```js
+/// <reference types="cypress" />
+it('loads', ()=> {
+    cy.visit('http://localhost:3000')
+    cy.get('.App-link').should('be.visible')
+})
+```
+
+## Does this test guarantee that our app works as expected?
+
+✅ App has corresponding class visible
+
+✅ App renders in UI
+
+❓ Does the app look as intended
+
+❓ Does the app work as intended
+
+🏋️‍♀️ Stop the application and rerun the test
+
+✅Confirms rendering works as expected
+
+### What is the disadvantage of this test?
+
+1. Need a rendered UI
+2. Need to deal with network issues
+3. Test will be slower
+4. Need an extra dependency (Cypress)
+5. Need to learn extra dependency API
+
+## Can we test the same thing more efficiently?
+
+```js
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
+});
+```
+
+## How do we check to make sure that the app looks as expected on web and mobile?
+
+* Using visual testing
+* Add a wdio test
+
+```js
+describe('My React application', () => {
+    it('should look correct', () => {
+        browser.url(`/`);
+        browser.execute('/*@visual.init*/', 'My React App');
+        browser.execute('/*@visual.snapshot*/', 'Home Page');
+    });
+});
+```
+* Add Sauce Connect, Not working yet!
+
+### 🏋️‍♀️ Expand the config to cover iOS and Android
+
+In today's day and age, everything must be responsive, so let's make sure that our app looks good on iOS web.
+Hint, use these capabilities:
+
+```js
+        //iphone X
+        {
+            browserName: 'safari',
+            platformName: 'macOS 10.15',
+            browserVersion: 'latest',
+            'sauce:options': {
+                ...sauceOptions,
+            },
+            'sauce:visual': {
+                ...visualOptions,
+                viewportSize: '375x812'
+            }
+        }
+```
+
+### 🤔🏋️‍♀️🛑 Let's change our image, what tests should that break?
+
+We're going to update the React image to something better. What tests should break?
+
+* Drag n drop a new image to the `/src`
+* Fix the path to be correct here `import logo from './mia.jpg';` in `App.js`
+* Save all files
+* Stop the app
+* Restart the app with `npm start`
+* Rerun the visual tests with `npm run test:visual`
+* Analyze the results in Screener dashboard
+
+## How setup CI
+
+Let's add this code to our CI system.
+
+## How to check code coverage
+
+https://create-react-app.dev/docs/running-tests
+`npm test -- --coverage`
+
+## Front-end performance
+
+* Use the task tracker application that we build in React JS crash course
+* Get the performance metrics by using <a> in the About and Footer components
+* Then change those to a Link component
+* Then recapture the front-end perf metrics
+* The expected result is that with the instant DOM refresh, the latter will be faster
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
