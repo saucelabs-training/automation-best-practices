@@ -1,6 +1,7 @@
 # automation-best-practices
 This is an Automation Best Practices workshop designed to teach testing through cross-functional automation
 
+<<<<<<< HEAD
 # ⚙️ Pre-requisites
 
 * Run `npm install` in root directory
@@ -8,6 +9,11 @@ This is an Automation Best Practices workshop designed to teach testing through 
 * Open application at http://localhost:3000/
 * Sign up for a free [Sauce account](https://saucelabs.com/sign-up)
 * Sign up for a free [Screener account](https://screener.io/)
+
+## TOC
+
+* [Automated atomic tests](./automated-atomic-tests/README.md)
+* [Login testing](./automated-atomic-tests/cypress/integration/login-testing/README.md)
 
 ## What is the most basic test that we can write for our application?
 * How about making sure that our app renders?
