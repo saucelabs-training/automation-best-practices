@@ -5,14 +5,15 @@ This is an Automation Best Practices workshop designed to teach testing through 
 
 * Run `npm install` in root directory
 * `npm run start:react` to start react app
-* Open application at http://localhost:3000/
 * Sign up for a free [Sauce account](https://saucelabs.com/sign-up)
 * Sign up for a free [Screener account](https://screener.io/)
+* Sign up for a free [Github account](https://github.com/)
+* Open application at http://localhost:3000/
 
 ## TOC
 
-* [Automated atomic tests](./automated-atomic-tests/README.md)
-* [Login testing](./automated-atomic-tests/cypress/integration/login-testing/README.md)
+* [Automated atomic tests](./exercises/README.md)
+* [Login testing](./exercises/cypress/integration/login-testing/README.md)
 
 ## What is the most basic test that we can write for our application?
 * How about making sure that our app renders?
@@ -42,7 +43,8 @@ it('loads', ()=> {
 ❓ Does the app work as intended
 
 🏋️‍♀️ Stop the application and rerun the test
-Confirms rendering works as expected
+
+✅Confirms rendering works as expected
 
 ## Can we test the same thing through a component test?
 
