@@ -17,7 +17,7 @@ Open application at http://localhost:3000/
 `npm run cy:open`
 
 * Delete the content in the the integration folder 
-* Add e2e folder
+* Add `ui` folder
 * Create a new test
 
 ```js
@@ -44,13 +44,32 @@ it('loads', ()=> {
 
 ### What is the disadvantage of this test?
 
-1. Need a rendered UI
-2. Need to deal with network issues
-3. Test will be slower
-4. Need an extra dependency (Cypress)
-5. Need to learn extra dependency API
+1. Need a browser
+2. Need a server`
+3. Need to deal with network issues
+4. Test will be slower
+5. Need an extra dependency (Cypress)
+6. Need to learn extra dependency API
 
-## Can we test the same thing more efficiently?
+## Can we test the same thing more efficiently❓
+
+1. Stop the server
+2. Rerun Cypress test
+3. ❓Why does the test fail?
+4. ❓Does our app still work?
+
+## Let's try with a component test
+
+There are a few ways to test React components. Broadly, they divide into two categories:
+
+* Rendering component trees in a simplified test environment and asserting on their output.
+* Running a complete app in a realistic browser environment (also known as “end-to-end” tests)
+
+[ReactJS.org](https://reactjs.org/docs/testing.html)
+
+Our app was created using `create-react-app`. With this method, we automatically get a few cool things for testing:
+* @testing-library
+* And we get an automatic component test in `src/App.test.js`
 
 ```js
 test('renders learn react link', () => {
@@ -59,6 +78,31 @@ test('renders learn react link', () => {
   expect(linkElement).toBeInTheDocument();
 });
 ```
+
+### Run the component test
+
+In your current directly, execute `npm run test`. The test should pass, even though our app isn't running.
+
+#### ❓What does the component test not validate that our E2E Cypress test did❓
+
+### Create a better locator for the link
+
+We all know that finding something by text sucks. Let's provide a better locator for our app.
+
+1. Go to `App.js`
+2. In the <a> of the App component add a `data-testid` property
+
+```js
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-testid="learn-link"
+        >
+```
+3. Update the test to have this line of code instead `const linkElement = screen.getByTestId('learn-link');`
+4. Save and the test will automatically rerun
 
 ## How do we check to make sure that the app looks as expected on web and mobile?
 

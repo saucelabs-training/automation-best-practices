@@ -34,3 +34,12 @@ To create a production build, use npm run build.
 * [Login testing](./exercises/cypress/integration/login-testing/README.md)
 * [Full Coverage Testing](./my-react-app/README.md)
 
+## What you will learn
+
+## Technologies you will use
+
+1. ReactJS
+2. Cypress
+3. WebdriverIO
+4. React testing library
+5. Screener visual E2E testing
