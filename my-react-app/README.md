@@ -4,11 +4,12 @@ Open application at http://localhost:3000/
 
 ## 🧪Testing Strategy
 
-| Expected Behavior  | Test Type  | Test Name  |
+| Expected Behavior  | Test Type  | Technologies  |
 |---|---|---|
 | Application renders  |  |   |
+| Learn React link goes to correct location  |   |   |
+| Learn React link opens in new tab  |   |   |
 | App looks as expected on web and mobile  |   |   |
-| Learn React link works  |   |   |
 | Front-end performance is at least a B  |   |   |
 
 ## What is the most basic test that we can write for our application?
@@ -77,6 +78,7 @@ Source: [Yoni Goldberg](https://github.com/nadvolod/component-tests-workshop/blo
 
 Our app was created using `create-react-app`. With this method, we automatically get a few cool things for testing:
 * @testing-library
+* jest
 * And we get an automatic component test in `src/App.test.js`
 
 ```js
@@ -86,6 +88,10 @@ test('renders learn react link', () => {
   expect(linkElement).toBeInTheDocument();
 });
 ```
+
+**Testing Library** is an opinionated framework that helps with component rendering and interactions.
+
+**Jest** is a test runner and provides a bunch of capabilities like matchers and snapshot testing
 
 ### Run the component test
 
@@ -103,7 +109,7 @@ MISSING INSTRUCTIONS
 We all know that finding something by text sucks. Let's provide a better locator for our app.
 
 1. Go to `App.js`
-2. In the <a> of the App component add a `data-testid` property
+2. In the `<a>` of the App component add a `data-testid` property
 
 ```js
         <a
@@ -140,3 +146,38 @@ it('should click link',()=>{
 3. We should never need to test that a link opens a new tab
 
 🏋️‍♀️Write a test to validate link behavior
+
+💡We don't need a browser to actually test this, so why not use a fast component test?
+
+1. Go to `App.test.js` and write a test that looks like this
+
+```js
+test('link has correct url', () => {
+  //render our App component in a virtual DOM
+  render(<App />);
+  //search for an element by text
+  const linkElement = screen.getByTestId('learn-link');
+  //Using Jest matchers: https://jestjs.io/docs/using-matchers
+  expect(linkElement.href).toContain('https://reactjs.org');
+})
+```
+2. Run the test
+
+❓What does this check actually test❓
+
+❓What if we wanted to test that the link opens in a new tab❓
+
+👀 Working with 'target' attribute
+
+🏋️‍♀️Write a component test to validate that link opens in a new tab
+
+❓Is our app fully tested now❓
+
+| Expected Behavior  | Tested? | Test Type  | Technologies  |
+|---|---|---|---|
+| Application renders  | ✅ | Component | React testing library, Jest |
+| Learn React link goes to correct location | ✅ | Component | React testing library, Jest |
+| Learn React link opens in new tab  | ✅ | Component | React testing library, Jest |
+| App looks as expected on web and mobile  | 🙅‍♂️ |   |   |
+| Front-end performance is at least a B  | 🙅‍♂️ |   |   |
+| App is secure  | 🙅‍♂️ |   |   |

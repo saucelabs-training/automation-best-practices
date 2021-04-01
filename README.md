@@ -33,6 +33,7 @@ To create a production build, use npm run build.
 * [Automated atomic tests](./exercises/README.md)
 * [Login testing](./exercises/cypress/integration/login-testing/README.md)
 * [Full Coverage Testing](./my-react-app/README.md)
+* [Full Coverage Testing](./my-react-app/VISUAL.md)
 
 ## What you will learn
 
@@ -42,7 +43,8 @@ To create a production build, use npm run build.
 2. Cypress
 3. WebdriverIO
 4. React testing library
-5. Screener visual E2E testing
+5. Jest
+6. Screener visual E2E testing
 
 ## Key
 

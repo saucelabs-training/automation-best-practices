@@ -13,20 +13,3 @@ test('renders learn react link', () => {
   expect(linkElement).toBeInTheDocument();
 })
 
-test('link has correct url', () => {
-  //render our App component in a virtual DOM
-  render(<App />);
-  //search for an element by text
-  const linkElement = screen.getByTestId('learn-link');
-  //Using Jest matchers: https://jestjs.io/docs/using-matchers
-  expect(linkElement.href).toContain('https://reactjs.org');
-})
-
-test('link opens in new tab', () => {
-  //render our App component in a virtual DOM
-  render(<App />);
-  //search for an element by text
-  const linkElement = screen.getByTestId('learn-link');
-  //Link should open a new tab
-  expect(linkElement.target).toBe('_blank')
-})
