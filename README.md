@@ -43,3 +43,9 @@ To create a production build, use npm run build.
 3. WebdriverIO
 4. React testing library
 5. Screener visual E2E testing
+
+## Key
+
+💡 this is a tip
+🏋️‍♀️ this is an exercise for you to do
+❓ this is a question for us to think and talk about
