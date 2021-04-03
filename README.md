@@ -3,6 +3,8 @@ This is an Automation Best Practices workshop designed to teach testing through 
 
 # ⚙️ Pre-requisites
 
+* Install [Node 14 LTS](https://nodejs.org/en/)
+* Have an IDE installed that can handle NodeJS (We will use VSCode)
 * Sign up for a free [Sauce account](https://saucelabs.com/sign-up)
 * Sign up for a free [Screener account](https://screener.io/)
 * Sign up for a free [Github account](https://github.com/)

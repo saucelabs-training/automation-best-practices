@@ -181,3 +181,5 @@ test('link has correct url', () => {
 | App looks as expected on web and mobile  | 🙅‍♂️ |   |   |
 | Front-end performance is at least a B  | 🙅‍♂️ |   |   |
 | App is secure  | 🙅‍♂️ |   |   |
+
+### Let's go implement [visual testing](./docs/VISUAL.md)
