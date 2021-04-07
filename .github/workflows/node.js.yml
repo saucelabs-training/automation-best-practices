@@ -27,6 +27,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Open correct directory
       run: cd my-react-app
+    - name: Install modules
+      run: |
+        cd my-react-app
+        npm install
     - name: Start the server
       run: |
         cd my-react-app
