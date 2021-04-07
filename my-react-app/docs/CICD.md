@@ -1,6 +1,13 @@
-## How setup CICD
+# How setup CICD
 
-Let's add this code to our CI system.
+## 🏋️‍♀️Let's add this code to our CI system.
+
+1. Create a a file in this folder structure `.github/workflows/ci.yml` in the root of your directory
+2. Paste in the following configuration
+
+```yml
+
+```
 
 ## How to check code coverage
 

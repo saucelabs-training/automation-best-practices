@@ -28,9 +28,13 @@ jobs:
     - name: Open correct directory
       run: cd my-react-app
     - name: Start the server
-      run: npm start
+      run: |
+        cd my-react-app
+        npm start
     - name: Run component tests
-      run: npm run test
+      run: |
+        cd my-react-app
+        npm run test
     - name: Run functional UI tests
       run: npm run cy:ci
     - name: Run visual tests
