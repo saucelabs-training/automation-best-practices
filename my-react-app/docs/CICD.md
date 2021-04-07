@@ -1,4 +1,4 @@
-## How setup CI
+## How setup CICD
 
 Let's add this code to our CI system.
 

@@ -75,6 +75,6 @@ We're going to update the React image to something better. What tests should bre
 | Front-end performance is at least a B  | 🙅‍♂️ |   |   |
 | App is secure  | 🙅‍♂️ |   |   |
 
-Instead of guessing our code coverage, wouldn't it be great to know it automatically?
+Wouldn't it be great to have this tested automatically through CI?
 
-[Let's setup up code coverage](./CODE-COVERAGE.md)
+[Let's setup up CI](./CICD.md)

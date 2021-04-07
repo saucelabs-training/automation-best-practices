@@ -19,7 +19,8 @@
     "eject": "react-scripts eject",
     "cy:open": "cypress open",
     "cy:ci": "cypress run",
-    "test:visual": "wdio run ./wdio.conf.js"
+    "test:visual": "wdio run ./wdio.conf.js",
+    "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch"
   },
   "eslintConfig": {
     "extends": [
