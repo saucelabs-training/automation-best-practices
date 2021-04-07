@@ -25,21 +25,27 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Open correct directory
-      run: cd my-react-app
-    - name: Install modules
+    - name: Install dependencies 📦
       run: |
         cd my-react-app
         npm install
-    - name: Start the server
+    - name: Build the app 🏗
+      run: |
+        cd my-react-app
+        npm run build
+    - name: Start the app 📤
       run: |
         cd my-react-app
         npm start
-    - name: Run component tests
+    - name: Run component tests 🔸
       run: |
         cd my-react-app
         npm run test
-    - name: Run functional UI tests
-      run: npm run cy:ci
-    - name: Run visual tests
-      run: npm run test:visual
+    - name: Run functional UI tests 🖥
+      run: |
+        cd my-react-app 
+        npm run cy:ci
+    - name: Run visual tests 👁
+      run: |
+        cd my-react-app 
+        npm run test:visual

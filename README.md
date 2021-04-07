@@ -30,6 +30,45 @@ Note that the development build is not optimized.
 To create a production build, use npm run build.
 ```
 
+#### Set Your Sauce Labs Credentials
+1. Copy your Sauce Labs **username** and **accessKey** in the [User Settings](https://app.saucelabs.com/user-settings) section of the [Sauce Labs Dashboard](https://app.saucelabs.com/dashboard/builds).
+2. Open a Terminal window (command prompt for Windows) and set your Sauce Labs Environment variables:   
+   ###### Mac OSX:
+   ```
+   $ export SAUCE_USERNAME="username"
+   $ export SAUCE_ACCESS_KEY="accessKey"
+   ```
+   ###### Windows:
+   ```
+   > set SAUCE_USERNAME="username"
+   > set SAUCE_ACCESS_KEY="accessKey"
+   ```
+   > To set an environment variables permanently in Windows, you must append it to the `PATH` variable.
+   
+   > Go to **Control Panel > System > Windows version > Advanced System Settings > Environment Variables > System Variables > Edit > New**
+   
+   > Then set the "Name" and "Value" for each variable
+   
+9. Test the environment variables
+    ###### Mac OSX:
+    ```
+    $ echo $SAUCE_USERNAME
+    $ echo $SAUCE_ACCESS_KEY
+    ```
+    > ***WARNING FOR UNIX USERS!***:
+    > If you have problems setting your environment variables, run the following commands in your terminal:
+    ```
+    $ launchctl setenv SAUCE_USERNAME $SAUCE_USERNAME
+    $ launchctl setenv SAUCE_ACCESS_KEY $SAUCE_ACCESS_KEY
+    ```
+    ###### Windows:
+    ```
+    > echo %SAUCE_USERNAME%
+    > echo %SAUCE_ACCESS_KEY%
+    ```
+
+
+
 ## TOC
 
 * [Automated atomic tests](./exercises/README.md)
