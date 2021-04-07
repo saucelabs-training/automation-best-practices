@@ -26,21 +26,23 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install dependencies 📦
+      #Using npm ci is generally faster than running npm install
       run: |
         cd my-react-app
-        npm install
+        npm ci
     - name: Build the app 🏗
       run: |
         cd my-react-app
         npm run build
-    - name: Start the app 📤
-      run: |
-        cd my-react-app
-        npm start
     - name: Run component tests 🔸
       run: |
         cd my-react-app
         npm run test
+    - name: Start the app 📤
+      run: |
+        cd my-react-app
+        npm start &
+        npx wait-on --timeout 60000
     - name: Run functional UI tests 🖥
       run: |
         cd my-react-app 
