@@ -15,7 +15,7 @@ npm install
 npm run start
 ```
 
-**Expected Output:**
+Expected Output:
 
 Your output should look similar to this
 ```
@@ -73,8 +73,9 @@ To create a production build, use npm run build.
 
 * [Automated atomic tests](./exercises/README.md)
 * [Login testing](./exercises/cypress/integration/login-testing/README.md)
-* [Full Coverage Testing](./my-react-app/README.md)
-* [Full Coverage Testing](./my-react-app/VISUAL.md)
+* [Full coverage testing](./my-react-app/README.md)
+* [Visual E2E testing](./my-react-app/docs/VISUAL.md)
+* [CICD](./my-react-app/docs/CICD.md)
 
 ## What you will learn
 
