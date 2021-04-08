@@ -8,6 +8,7 @@
 ```yml
 
 ```
+3. Add New repository secrets for the repo
 
 ## How to check code coverage
 
