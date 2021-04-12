@@ -35,16 +35,25 @@ describe('Shopping cart', () => {
 
 ```
 
-### 🏋️‍♀️ Breaking up the test
+❓So how many tests is this really❓
+
+### 🏋️‍♀️ Get started with Cypress
+
+1. `npm install`
+2. `npx cypress open`
+3. Open `exercise.spec.js`. Please don't peek at the `solution.spec.js`🙏. The workshop is more fun when we struggle together 😁
+
+### 🏋️‍♀️ Automated atomic tests exercise
 
 We're going to break down this test into atomic ones.
 
-❓So how many tests is this really❓
-
 🏋️‍♀️ Code a suite of atomic tests
 
-1. cd `automated-atomic-tests` and `npm install`
-2. Go to the `cypress/integration/automated-atomic-tests/exercise` directory
-3. Create spec files to cover all of the features
+> Keep in mind that this is a really small test and larger tests will be even
+> more of a hinderance to your testing
+
+1. 
+2. Go to the `cypress/integration/exercise.spec.js`
+3. Create AATs for all of the features
 4. There's a hint for how to handle the login in `spec.js`
 

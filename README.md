@@ -75,8 +75,8 @@ To create a production build, use npm run build.
 
 ## TOC
 
-* [Automated atomic tests](./exercises/README.md)
-* [Login testing](./exercises/cypress/integration/login-testing/README.md)
+* [Automated atomic tests](./automated-atomic-tests/README.md)
+* [Login testing](./login-testing/README.md)
 * [Full coverage testing](./my-react-app/README.md)
 * [Visual E2E testing](./my-react-app/docs/VISUAL.md)
 * [CICD](./my-react-app/docs/CICD.md)
