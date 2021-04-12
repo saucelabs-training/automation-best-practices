@@ -37,6 +37,9 @@ describe('Shopping cart', () => {
 
 ❓So how many tests is this really❓
 
+> Keep in mind that this non-atomic test is really small and larger tests will be even
+> more of a hinderance to your testing
+
 ### 🏋️‍♀️ Get started with Cypress
 
 1. `npm install`
@@ -49,11 +52,23 @@ We're going to break down this test into atomic ones.
 
 🏋️‍♀️ Code a suite of atomic tests
 
-> Keep in mind that this is a really small test and larger tests will be even
-> more of a hinderance to your testing
+1. Go to the `cypress/integration/exercise.spec.js`
+2. Create AATs for all of the features
 
-1. 
-2. Go to the `cypress/integration/exercise.spec.js`
-3. Create AATs for all of the features
-4. There's a hint for how to handle the login in `spec.js`
+💡 Use this command to bypass the UI login
 
+```js
+      //setTestContext() defined in support/commands.js
+      cy.setTestContext({
+        user: LOGIN_USERS.STANDARD,
+        path: PAGES.INVENTORY
+      });
+
+```
+
+## 📔Summary
+
+✅ Automated atomic tests validate a single feature
+✅ Testing a login is only necessary once
+
+🏃‍♀️Let's learn more about automating logins

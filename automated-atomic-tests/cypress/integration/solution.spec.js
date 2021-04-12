@@ -9,6 +9,8 @@ describe('Solution for automated atomic tests', () => {
     beforeEach(() => {
       // the url comes from cypress.json
       cy.visit('');
+      // it's important to clear session storage so that it doesn't persist
+      // between tests
       cy.window().then((win) => {
         win.sessionStorage.clear()
       });

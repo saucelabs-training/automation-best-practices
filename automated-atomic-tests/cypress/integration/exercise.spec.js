@@ -4,6 +4,7 @@ import AppHeader from '../page-objects/AppHeaderPage';
 import LoginPage from '../page-objects/LoginPage'
 import {LOGIN_USERS} from "../support/e2eConstants";
 
+//using Mocha test runner: https://mochajs.org/
 describe('Shopping cart', () => {
   beforeEach(() => {
       cy.visit('https://www.saucedemo.com/v1');
