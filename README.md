@@ -1,13 +1,37 @@
 # automation best practices workshop
 
-Let's learn cross-functional test automation with CICD! In this workshop you will learn:
+In this automation best practices workshop you will learn the latest and greatest tools and techniques to drastically improve your testing!
 
-✅ Multiple ways to test a login
-✅ Atomic test automation
-✅ Component tests
+## 🧠You will learn
+
+✅What is an automated atomic test 
+
+✅How to code automated atomic tests
+
+✅How to login without a UI using a HTML web forms 
+
+✅How to login without a UI using JWT
+
+## 🔧Technologies you will use
+
+1. ReactJS
+2. Cypress
+3. WebdriverIO
+4. React testing library
+5. Jest
+6. Screener visual E2E testing
+7. Sauce Labs
+
+## TOC
+
+* [Automated atomic tests](./automated-atomic-tests/README.md)
+* [Login testing](./login-testing/README.md)
+* [Full coverage testing](./my-react-app/README.md)
+* [Visual E2E testing](./my-react-app/docs/VISUAL.md)
+* [CICD](./my-react-app/docs/CICD.md)
 
 
-## ⚙️ Pre-requisites
+## ⚙️ Setup
 
 * Install [Node 14 LTS](https://nodejs.org/en/)
 * Have an IDE installed that can handle NodeJS (We will use VSCode)
@@ -73,27 +97,14 @@ To create a production build, use npm run build.
     > echo %SAUCE_ACCESS_KEY%
     ```
 
-## TOC
 
-* [Automated atomic tests](./automated-atomic-tests/README.md)
-* [Login testing](./login-testing/README.md)
-* [Full coverage testing](./my-react-app/README.md)
-* [Visual E2E testing](./my-react-app/docs/VISUAL.md)
-* [CICD](./my-react-app/docs/CICD.md)
 
-## What you will learn
 
-## Technologies you will use
-
-1. ReactJS
-2. Cypress
-3. WebdriverIO
-4. React testing library
-5. Jest
-6. Screener visual E2E testing
 
 ## Key
 
 💡 this is a tip
+
 🏋️‍♀️ this is an exercise for you to do
+
 ❓ this is a question for us to think and talk about. Try not to scroll beyond this question before we discuss

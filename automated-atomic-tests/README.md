@@ -1,5 +1,11 @@
 # Automated Atomic Tests
 
+## 🧠You will learn:
+
+✅What is an automated atomic test 
+
+✅How to code automated atomic tests
+
 
 An automated atomic test (AAT) is one that tests only a single feature or component. An AAT should form a single irreducible unit. An automated test should not do something like end-to-end automation. As an aside, this concept is already well understood in unit and integration tests, but UI tests continue to lag behind.
 
