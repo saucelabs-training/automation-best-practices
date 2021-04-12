@@ -1,7 +1,13 @@
-# automation-best-practices
-This is an Automation Best Practices workshop designed to teach testing through cross-functional automation
+# automation best practices workshop
 
-# ⚙️ Pre-requisites
+Let's learn cross-functional test automation with CICD! In this workshop you will learn:
+
+✅ Multiple ways to test a login
+✅ Atomic test automation
+✅ Component tests
+
+
+## ⚙️ Pre-requisites
 
 * Install [Node 14 LTS](https://nodejs.org/en/)
 * Have an IDE installed that can handle NodeJS (We will use VSCode)
@@ -67,8 +73,6 @@ To create a production build, use npm run build.
     > echo %SAUCE_ACCESS_KEY%
     ```
 
-
-
 ## TOC
 
 * [Automated atomic tests](./exercises/README.md)
@@ -92,4 +96,4 @@ To create a production build, use npm run build.
 
 💡 this is a tip
 🏋️‍♀️ this is an exercise for you to do
-❓ this is a question for us to think and talk about
+❓ this is a question for us to think and talk about. Try not to scroll beyond this question before we discuss

@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import App from '../App';
 
 //Using Jest matchers: https://jestjs.io/docs/using-matchers
 

@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
 
-import ProductsPage from '../../../page-objects/ProductsPage';
-import AppHeader from '../../../page-objects/AppHeaderPage';
-import {LOGIN_USERS} from "../../../support/e2eConstants";
+import ProductsPage from '../page-objects/ProductsPage';
+import AppHeader from '../page-objects/AppHeaderPage';
+import {LOGIN_USERS} from "../support/e2eConstants";
 
 describe('Shopping cart', () => {
     beforeEach(() => {
