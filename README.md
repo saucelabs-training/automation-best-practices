@@ -22,7 +22,7 @@ In this automation best practices workshop you will learn the latest and greates
 6. Screener visual E2E testing
 7. Sauce Labs
 
-## TOC
+## Table Of Contents
 
 * [Automated atomic tests](./automated-atomic-tests/README.md)
 * [Login testing](./login-testing/README.md)

@@ -11,9 +11,11 @@
 ```bash
 git clone https://github.com/nadvolod/cypress-example-recipes
 npm install
-cd logging-in__html-web-forms/
+cd examples/logging-in__html-web-forms/
 npm run dev
 ```
+
+### Exploring the app
 
 Our simple web app is protected by a web form
 
@@ -21,13 +23,35 @@ Our simple web app is protected by a web form
 2. Try to login with valid credentials `jane.lane` and `password123`. Pay attention to the requests and behavior of the application
 3. Also try to login with invalid credentials.
 
-### ❓What tests can we create to test this app❓
+Some expected app behaviors
+1. /admin only allowed for authenticated users
+2. /users only allowed for authenticated users
+2. /dashboard only allowed for authenticated users
+3. Only user `jane.lane` and `password123` can access the app
+
+
+### ❓What tests can we create to validate the behavior of this app❓
+
+
+
+Open `inneficient.spec.js` 
+
+### ❓What are the problems with these tests❓
+
+UI tests in general are inneficient! Hence, so many models exist to discourage us from writing so many UI tests (autoamtion pyramid, automation trophy, automation diamond...)
+
+![Testing types comparison](images/testing%20comparison%20chart.png)
+
+So let's improve our tests...
 
 ### 🏋️‍♀️Exercise
 
-Open `exercise.spec.js` and
+1. Open `exercise.spec.js`
 1. Create a test that can visit `/dashboard` without a UI login
-2. Create a test that can visit `/users without` a UI login
+2. Create a test that can visit `/users` without a UI login
+3. Create a test that can visit `/admin` without a UI login
+
+💡 You already have some helpful code to make your life easier 
 
 ### Advantages/Disadvantages
 ✅Fast
@@ -35,6 +59,13 @@ Open `exercise.spec.js` and
 ✅Reliable
 
 ✖️Need to learn how your API works (maybe a good thing)
+
+## 📔Summary
+
+1. We bypassed one login using `sessionStorage` in a browser. This case is not typical as most websites don't have authentication code that happens in the front-end.
+2. We bypassed another login using an HTML Web Form. This is a common approach that we can use to tackle other types of logins
+
+---
 
 ## JSON Web Token (JWT)
 
