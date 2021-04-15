@@ -2,6 +2,8 @@
 
 In this automation best practices workshop you will learn the latest and greatest tools and techniques to drastically improve your testing!
 
+We will focus on a holistic approach of testing front-end and back-end, web and APIs, functional testing, component testing, and many other things in between 😁
+
 ## 🧠You will learn
 
 ✅What is an automated atomic test 
