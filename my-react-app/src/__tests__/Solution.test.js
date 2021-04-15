@@ -19,7 +19,7 @@ test('link has correct url', () => {
   //search for an element by text
   const linkElement = screen.getByTestId('learn-link');
   //Using Jest matchers: https://jestjs.io/docs/using-matchers
-  expect(linkElement.href).toContain('https://reactjs.org');
+  expect(linkElement.href).toContain('ultimateqa');
 })
 
 test('link opens in new tab', () => {

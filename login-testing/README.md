@@ -10,12 +10,16 @@
 
 ### ⚙️Setup
 
+Fork https://github.com/nadvolod/cypress-example-recipes
+
 ```bash
 git clone https://github.com/nadvolod/cypress-example-recipes
 npm install
 cd examples/logging-in__html-web-forms/
 npm run dev
 ```
+
+!We will only work in https://github.com/nadvolod/cypress-example-recipes for login testing
 
 ### Exploring the app
 

@@ -47,7 +47,7 @@
     "@wdio/spec-reporter": "^7.0.7",
     "@wdio/sync": "^7.0.7",
     "chromedriver": "^88.0.0",
-    "cypress": "^6.5.0",
+    "cypress": "7.1.0",
     "wdio-chromedriver-service": "^7.0.0"
   }
 }
