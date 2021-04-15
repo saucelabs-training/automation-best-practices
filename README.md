@@ -23,6 +23,7 @@ We will focus on a holistic approach of testing front-end and back-end, web and 
 5. Jest
 6. Screener visual E2E testing
 7. Sauce Labs
+8. Github Actions
 
 ## Table Of Contents
 

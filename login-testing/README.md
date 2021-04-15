@@ -8,6 +8,8 @@
 
 ## HTML Web Form
 
+### ⚙️Setup
+
 ```bash
 git clone https://github.com/nadvolod/cypress-example-recipes
 npm install
@@ -69,7 +71,26 @@ So let's improve our tests...
 
 ## JSON Web Token (JWT)
 
-How does the [JWT](https://jwt.io/introduction) work?
+### ⚙️Setup
+1. Kill all of the processess running from previous session (server and cypress)
+2. `cd logging-in_jwt`
+3. `npm run dev`
+4. App runs on http://localhost:8081/
+
+### The SUT
+
+*Authenticate User:* 
+
+
+POST to http://localhost:4000/users/authenticate
+
+*Get list of users:*
+
+ GET to http://localhost:4000/users with a bearer token as auth
+
+Explore the application at `http://localhost:8081/` and notice the behavior of authentication
+
+### How does [JWT](https://jwt.io/introduction) work?
 1. Form fires `handleSubmit()`
 2. Reads form values
 3. Fires a web request for authentication
@@ -93,28 +114,7 @@ if (user.token) {
 ```
 ![tokenAdded](./images/TokenAdded.png )
 
-### Setup
-
-```bash
-cd examples/logging-in__jwt/
-#start backend
-npm run start:server
-#start front-end
-npm run start:app
-```
-
-### The SUT
-
-*Authenticate User:* 
-
-
-POST to http://localhost:4000/users/authenticate
-
-*Get list of users:*
-
- GET to http://localhost:4000/users with a bearer token as auth
-
-Explore the application at `http://localhost:8081/` and notice the behavior of authentication
+[Building and testing an auth API with JWT tutorial](https://www.youtube.com/watch?v=klIAT82UtVs)
 
 ### ❓What tests can we create to test this app❓
 
@@ -126,10 +126,12 @@ Explore the application at `http://localhost:8081/` and notice the behavior of a
 
 ### 🏋️‍♀️Atomic login tests (20min)
 
-Open `exercise.spec.js`
+Open `cypress/integration/exercise.spec.js`
 Your challenge is to create 2 tests:
 1. Create a test to login with a JWT and assert that user is successfully logged in
 2. Assert that a user can successfully log out. You're not allowed to login through the UI
+
+💡 JWT authentication is already implemented for you
 
 ## 📝Summary
 
@@ -137,7 +139,7 @@ Your challenge is to create 2 tests:
 
 ✅Authenticating using non-UI methods is more stable and efficient
 
-✅Two types of authentication are: HTML Web forms + JWT
+✅We learned 3 types of authentication: HTML Web forms, JWT, Directly setting session storage (not realistic)
 
 ## 📔More Resources
 
