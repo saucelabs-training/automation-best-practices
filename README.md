@@ -51,6 +51,7 @@ We will focus on a holistic approach of testing front-end and back-end, web and 
 ## ⚙️ Setup
 
 * Install [Node 14 LTS](https://nodejs.org/en/)
+* !Use NVM or brew: https://github.com/nvm-sh/nvm / https://formulae.brew.sh/formula/node
 * Have an IDE installed that can handle NodeJS (We will use VSCode)
 * Sign up for a free [Sauce account](https://saucelabs.com/sign-up)
 * Sign up for a free [Github account](https://github.com/)

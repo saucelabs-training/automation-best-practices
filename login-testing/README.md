@@ -14,6 +14,7 @@ Fork https://github.com/nadvolod/cypress-example-recipes
 
 ```bash
 git clone https://github.com/nadvolod/cypress-example-recipes
+cd cypress-example-recipes
 npm install
 cd examples/logging-in__html-web-forms/
 npm run dev
@@ -46,7 +47,7 @@ Open `inneficient.spec.js`
 
 UI tests in general are inneficient! Hence, so many models exist to discourage us from writing so many UI tests (autoamtion pyramid, automation trophy, automation diamond...)
 
-![Testing types comparison](images/testing%20comparison%20chart.png)
+![Testing types comparison](./images/testing%20comparison%20chart.png)
 
 So let's improve our tests...
 

@@ -26,6 +26,8 @@ describe('Solution for automated atomic tests', () => {
     });
   });
 
+  // typically we would actually put this into a separate file
+  // and have another context(). However, we put it here for demonstration
   context('Product items', () => {
     it('should be added to cart without UI login', () => {
       //setTestContext() defined in support/commands.js

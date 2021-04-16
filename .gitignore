@@ -5,7 +5,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
-*.png
 *.mp4
 **/cypress/videos/**.mp4
 
@@ -107,3 +106,5 @@ dist
 .tern-port
 
 
+my-react-app/cypress/screenshots/solution.spec.js/The React app -- should click link (failed).png
+automated-atomic-tests/cypress/screenshots/shopping-cart.spec.js/Shopping cart -- should add item to cart (failed).png
