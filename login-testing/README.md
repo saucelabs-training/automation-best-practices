@@ -143,7 +143,7 @@ Your challenge is to create 2 tests:
 
 ✅Authenticating using non-UI methods is more stable and efficient
 
-✅We learned 3 types of authentication: HTML Web forms, JWT, Directly setting session storage (not realistic)
+✅We learned 3 types of authentication: HTML Web forms, JWT, directly setting session storage (not realistic)
 
 ## 📔More Resources
 
@@ -154,4 +154,4 @@ There are numerous other ways that we can authenticate:
 4. CSRF tokens
 5. Basic auth
 
-[Learn more by looking at the logging-in examples](https://github.com/cypress-io/cypress-example-recipes/tree/master/examples)
+[Learn more by looking at the logging-in examples](https://github.com/nadvolod/cypress-example-recipes)

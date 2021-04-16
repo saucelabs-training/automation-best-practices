@@ -1,9 +1,10 @@
 # Visual E2E Testing
 
-## TOC
+## 🧠You will learn
 
-* What is visual E2E testing?
-* How to implement it using WebdriverIO + Screener
+✅What is visual E2E testing? 
+
+✅How to implement visual e2e using WebdriverIO + Screener
 
 ## How do we check to make sure that the app looks as expected on web and mobile?
 
@@ -74,6 +75,12 @@ We're going to update the React image to something better. What tests should bre
 | App looks as expected on web and mobile  | ✅ | Visual  | Screener,WebdriverIO  |
 | Front-end performance is at least a B  | 🙅‍♂️ |   |   |
 | App is secure  | 🙅‍♂️ |   |   |
+
+## 📝Summary
+
+✅Visual e2e testing is a simple and efficient way to test your web app cross-platform
+
+✅We used WebdriverIO + Screener.io to write our visual e2e tests
 
 Wouldn't it be great to have this tested automatically through CI?
 

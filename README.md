@@ -22,6 +22,12 @@ We will focus on a holistic approach of testing front-end and back-end, web and 
 
 ✅How to replace e2e tests with component tests
 
+✅visual e2e tests
+
+✅visual cross-browser tests
+
+✅CICD with Github Actions
+
 ## 🔧Technologies you will use
 
 1. ReactJS

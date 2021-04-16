@@ -77,4 +77,4 @@ We're going to break down this test into atomic ones.
 ✅ Automated atomic tests validate a single feature
 ✅ Testing a login is only necessary once
 
-🏃‍♀️Let's learn more about automating logins
+🏃‍♀️Let's learn more about [automating logins](./../login-testing/README.md)
