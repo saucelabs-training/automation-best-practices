@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "open": "npx cypress open",
+    "cy:open": "npx cypress open",
     "test.local": "npx cypress run",
     "test.local.headfull": "npx cypress run --headed"
   },

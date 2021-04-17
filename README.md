@@ -41,9 +41,9 @@ We will focus on a holistic approach of testing front-end and back-end, web and 
 
 ## Table Of Contents
 
-* [Automated atomic tests](./automated-atomic-tests/README.md)
-* [Login testing](./login-testing/README.md)
-* [Full coverage testing](./my-react-app/README.md)
+* [Automated atomic tests](./automated-atomic-tests/ATOMIC-TESTS.md)
+* [Login testing](./login-testing/LOGINS.md)
+* [Full coverage testing](./my-react-app/FULL-COVERAGE.md)
 * [Visual E2E testing](./my-react-app/docs/VISUAL.md)
 * [CICD](./my-react-app/docs/CICD.md)
 

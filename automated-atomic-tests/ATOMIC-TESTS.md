@@ -6,12 +6,29 @@
 
 ✅How to code automated atomic tests
 
+## SUT
 
-An automated atomic test (AAT) is one that tests only a single feature or component. An AAT should form a single irreducible unit. An automated test should not do something like end-to-end automation. As an aside, this concept is already well understood in unit and integration tests, but UI tests continue to lag behind.
+Let's quickly explore the software that we will test.
 
-We can usually tell that a test is atomic when:
-1. The test will have a handful of assertions at most. 
-2. Atomic tests have very few UI interactions and typically touch a maximum of two screens.  
+1. Open the demo app at `https://www.saucedemo.com/v1`
+2. Try a login (the login works by setting session storage)
+3. Try to add a product
+
+## Automated atomic tests
+
+An automated atomic test (AAT) is one that tests only a single feature or component. AAT have very few UI interactions and typically touch a maximum of two screens. The "typical" UI end-to-end tests break the AAT pattern. 
+
+Furthermore, AATs meet several requirements of [good tests as specified by Kent Beck](https://github.com/nadvolod/testing-best-practices/blob/main/README.md#what-is-a-good-test-1)
+
+✅ Isolated
+
+✅ Composable
+
+✅ Fast
+
+
+
+As an aside, this concept is already well understood in unit and integration tests, but UI tests continue to lag behind.
 
 ## ❓Is this test atomic❓
 
@@ -49,7 +66,7 @@ describe('Shopping cart', () => {
 ### 🏋️‍♀️ Get started with Cypress
 
 1. `npm install`
-2. `npx cypress open`
+2. `npm run cy:open`
 3. Open `exercise.spec.js`. Please don't peek at the `solution.spec.js`🙏. The workshop is more fun when we struggle together 😁
 
 ### 🏋️‍♀️ Automated atomic tests exercise
@@ -77,4 +94,4 @@ We're going to break down this test into atomic ones.
 ✅ Automated atomic tests validate a single feature
 ✅ Testing a login is only necessary once
 
-🏃‍♀️Let's learn more about [automating logins](./../login-testing/README.md)
+🏃‍♀️Let's learn more about [automating logins](./../login-testing/)
