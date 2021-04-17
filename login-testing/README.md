@@ -77,8 +77,8 @@ So let's improve our tests...
 ## JSON Web Token (JWT)
 
 ### ⚙️Setup
-1. Kill all of the processess running from previous session (server and cypress)
-2. `cd logging-in_jwt`
+1. `Ctrl + C` to kill all of the processess running from previous session (server and cypress)
+2. `cd ../logging-in_jwt`
 3. `npm run dev`
 4. App runs on http://localhost:8081/
 

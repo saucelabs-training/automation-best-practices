@@ -50,11 +50,29 @@ We will focus on a holistic approach of testing front-end and back-end, web and 
 
 ## ⚙️ Setup
 
-* Install [Node 14 LTS](https://nodejs.org/en/)
-* !Use NVM or brew: https://github.com/nvm-sh/nvm / https://formulae.brew.sh/formula/node
-* Have an IDE installed that can handle NodeJS (We will use VSCode)
-* Sign up for a free [Sauce account](https://saucelabs.com/sign-up)
-* Sign up for a free [Github account](https://github.com/)
+### 1. Install Node 14 LTS
+  * Use NVM for this installation by [following instructions](https://github.com/nvm-sh/nvm#install--update-script)
+  * It should be just a single command to run in our terminal
+  * After installation, confirm install was correct by runnin `nvm` and seeing an output
+  * Intall Node 14 with `nvm install 14`
+  
+  Here's what the output would look like:
+  ```
+  Downloading and installing node v14.16.1...
+  Downloading https://nodejs.org/dist/v14.16.1/node-v14.16.1-darwin-x64.tar.xz...
+  ######################################################################### 100.0%
+  Computing checksum with shasum -a 256
+  Checksums matched!
+  Now using node v14.16.1 (npm v6.14.12)
+  Creating default alias: default -> 14 (-> v14.16.1)
+  ```
+  * Finally, confirm node installation with `node --version` and seeing `v14.16.1` or similar
+
+
+
+### 2.Have an IDE installed that can handle NodeJS (We will use [VSCode](https://code.visualstudio.com/Download))
+### 3.Sign up for a free [Sauce account](https://saucelabs.com/sign-up)
+### 4.Sign up for a free [Github account](https://github.com/)
 
 ```bash
 cd my-react-app
@@ -77,7 +95,7 @@ Note that the development build is not optimized.
 To create a production build, use npm run build.
 ```
 
-#### Set Your Sauce Labs Credentials
+### 5.Set Your Sauce Labs Credentials
 1. Copy your Sauce Labs **username** and **accessKey** in the [User Settings](https://app.saucelabs.com/user-settings) section of the [Sauce Labs Dashboard](https://app.saucelabs.com/dashboard/builds).
 2. Open a Terminal window (command prompt for Windows) and set your Sauce Labs Environment variables:   
    ###### Mac OSX:
