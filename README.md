@@ -74,6 +74,7 @@ We will focus on a holistic approach of testing front-end and back-end, web and 
 ### 3.Sign up for a free [Sauce account](https://saucelabs.com/sign-up)
 ### 4.Sign up for a free [Github account](https://github.com/)
 
+### 5.Install the app
 ```bash
 cd my-react-app
 npm install
@@ -95,7 +96,7 @@ Note that the development build is not optimized.
 To create a production build, use npm run build.
 ```
 
-### 5.Set Your Sauce Labs Credentials
+### 6.Set Your Sauce Labs Credentials
 1. Copy your Sauce Labs **username** and **accessKey** in the [User Settings](https://app.saucelabs.com/user-settings) section of the [Sauce Labs Dashboard](https://app.saucelabs.com/dashboard/builds).
 2. Open a Terminal window (command prompt for Windows) and set your Sauce Labs Environment variables:   
    ###### Mac OSX:
