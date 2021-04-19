@@ -66,6 +66,7 @@ We will focus on a holistic approach of testing front-end and back-end, web and 
   Now using node v14.16.1 (npm v6.14.12)
   Creating default alias: default -> 14 (-> v14.16.1)
   ```
+  * **!Don't forget to restart your terminal!**
   * Confirm node installation with `node --version` and seeing `v14.16.1` or similar
   * Confirm NVM is set to 14 for default by running the following commands:
 
@@ -87,6 +88,7 @@ nvm alias default 14.16.x #to set it to the default
 ```bash
 git clone URL_OF_YOUR_FORK
 ```
+4. Navigate to the directory of where you cloned your repo
 
 ### 3.Install the app
 ```bash
