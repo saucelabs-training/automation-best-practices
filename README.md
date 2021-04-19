@@ -74,7 +74,17 @@ We will focus on a holistic approach of testing front-end and back-end, web and 
 ### 3.Sign up for a free [Sauce account](https://saucelabs.com/sign-up)
 ### 4.Sign up for a free [Github account](https://github.com/)
 
-### 5.Install the app
+### 5.Clone and fork the repo
+1. Fork this respository
+ * Make sure you are loggin into Github
+ * click the Fork in the upper right of the Github.
+3. Clone your fork of the repository to your machine
+
+```bash
+git clone URL_OF_YOUR_FORK
+```
+
+### 6.Install the app
 ```bash
 cd my-react-app
 npm install
