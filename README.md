@@ -54,7 +54,7 @@ We will focus on a holistic approach of testing front-end and back-end, web and 
   * Use NVM for this installation by [following instructions](https://github.com/nvm-sh/nvm#install--update-script)
   * It should be just a single command to run in our terminal
   * After installation, confirm install was correct by runnin `nvm` and seeing an output
-  * Intall Node 14 with `nvm install 14`
+  * Intall Node 14 with `nvm install 14` 
   
   Here's what the output would look like:
   ```
@@ -66,15 +66,18 @@ We will focus on a holistic approach of testing front-end and back-end, web and 
   Now using node v14.16.1 (npm v6.14.12)
   Creating default alias: default -> 14 (-> v14.16.1)
   ```
-  * Finally, confirm node installation with `node --version` and seeing `v14.16.1` or similar
+  * Confirm node installation with `node --version` and seeing `v14.16.1` or similar
+  * Confirm NVM is set to 14 for default by running the following commands:
+
+```bash
+nvm list #will show all versions
+nvm use 14 #to use 14
+nvm alias default 14.16.x #to set it to the default
+```
 
 
 
-### 2.Have an IDE installed that can handle NodeJS (We will use [VSCode](https://code.visualstudio.com/Download))
-### 3.Sign up for a free [Sauce account](https://saucelabs.com/sign-up)
-### 4.Sign up for a free [Github account](https://github.com/)
-
-### 5.Clone and fork the repo
+### 2.Clone and fork the repo
 1. Fork this respository
  * Make sure you are loggin into Github
  * click the Fork in the upper right of the Github.
@@ -84,7 +87,7 @@ We will focus on a holistic approach of testing front-end and back-end, web and 
 git clone URL_OF_YOUR_FORK
 ```
 
-### 6.Install the app
+### 3.Install the app
 ```bash
 cd my-react-app
 npm install
@@ -105,8 +108,11 @@ You can now view my-react-app in the browser.
 Note that the development build is not optimized.
 To create a production build, use npm run build.
 ```
+### 4.Have an IDE installed that can handle NodeJS (We will use [VSCode](https://code.visualstudio.com/Download))
+### 5.Sign up for a free [Sauce account](https://saucelabs.com/sign-up)
+### 6.Sign up for a free [Github account](https://github.com/)
 
-### 6.Set Your Sauce Labs Credentials
+### 7.Set Your Sauce Labs Credentials
 1. Copy your Sauce Labs **username** and **accessKey** in the [User Settings](https://app.saucelabs.com/user-settings) section of the [Sauce Labs Dashboard](https://app.saucelabs.com/dashboard/builds).
 2. Open a Terminal window (command prompt for Windows) and set your Sauce Labs Environment variables:   
    ###### Mac OSX:
