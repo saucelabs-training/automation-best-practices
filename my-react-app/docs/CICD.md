@@ -46,6 +46,8 @@ jobs:
       run: |
         cd my-react-app
         npm run test
+    # If we had more time, at this point we can actually deploy our app
+    # to a staging server and then run functional tests
     - name: Start the app 📤
       run: |
         cd my-react-app
