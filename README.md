@@ -83,7 +83,7 @@ nvm alias default 14.16.x #to set it to the default
 2. Fork this respository
  * Make sure you are logged into Github
  * click the Fork in the upper right of the Github.
-3. Clone your fork of the repository to your machine
+3. Clone your fork of the repository to your machine. Must have [Git installed](https://git-scm.com/downloads)
 
 ```bash
 git clone URL_OF_YOUR_FORK
