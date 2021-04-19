@@ -8,6 +8,6 @@ describe('The React app', () => {
     
     it('should click link',()=>{
         cy.visit('/');
-        cy.get('[data-testid=learn-link]').click().url().should('not.contain','reactjs.org');
+        cy.get('[data-testid=learn-link]').click().url().should('not.contain','ultimateqa.com');
     })    
 })

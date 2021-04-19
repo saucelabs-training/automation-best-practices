@@ -1,5 +1,7 @@
 # Full Coverage Testing
 
+> We are back to `https://github.com/saucelabs-training/automation-best-practices` and will work here for the rest of the workshop!
+
 ## 🧠You will learn
 
 ✅How to write a component test 
@@ -12,7 +14,9 @@
 
 ## ⚙️ Setup
 
-1. Stop all servers from previous session
+> We are back to `https://github.com/saucelabs-training/automation-best-practices` and will work here for the rest of the workshop!
+
+1. Stop all servers from previous session (`Ctrl + C` everything)
 2. cd `my-react-app`
 3. `npm install`
 4. `npm start`
@@ -21,25 +25,26 @@ Open application at http://localhost:3000/
 
 ## 🧪Testing Strategy
 
-| Expected Behavior  | Test Type  | Technologies  |
-|---|---|---|
-| Application renders  |  |   |
-| Learn React link goes to correct location  |   |   |
-| Learn React link opens in new tab  |   |   |
-| App looks as expected on web and mobile  |   |   |
-| Front-end performance is at least a B  |   |   |
+| Expected Behavior  | Tested? | Test Type  | Technologies  |
+|---|---|---|---|
+| Application renders  | 🙅‍♂️ | Component/UI/unit | React testing library, Jest |
+| Learn React link goes to correct location | 🙅‍♂️ |  |  |
+| Learn React link opens in new tab  | 🙅‍♂️ |  |  |
+| App looks as expected on web and mobile  | 🙅‍♂️ |   |   |
+| Front-end performance is at least a B  | 🙅‍♂️ |   |   |
+| App is secure  | 🙅‍♂️ |   |   |
+| Multiple other testing types...  | 🙅‍♂️ |   |   |
 
 ## What is the most basic test that we can write for our application?
 * How about making sure that our app renders?
 
 ### 🏋️‍♀️Write a cypress test to make sure that our app opens.
 
-* `npm run cy:open`
-* Delete the content in the the integration folder 
-* Create a new test in `cypress/integration/exercise.spec.js` (might already be there)
-
+* `npx cypress open`
+* Write a test to ensure our app renders `cypress/integration/exercise.spec.js`
+---
 ## ❓Does this test guarantee that our app works as expected?
-
+---
 ✅ App has corresponding class visible
 
 ✅ App renders in UI
@@ -48,7 +53,9 @@ Open application at http://localhost:3000/
 
 ❓ Does the app work as intended
 
-🏋️‍♀️ Stop the application and rerun the test
+---
+
+### 🏋️‍♀️ Stop the application and rerun the test
 
 ✅ Confirms rendering works as expected
 
@@ -66,7 +73,7 @@ Open application at http://localhost:3000/
 
 ## Can we test the same thing more efficiently❓
 
-1. Stop the server
+1. Stop the App server (`Ctrl + C` in the terminal of your app)
 2. Rerun Cypress test
 3. ❓Why does the test fail?
 4. ❓Does our app still work?
@@ -86,6 +93,20 @@ There are a few ways to test React components. Broadly, they divide into two cat
 ![Component tests](./../graphics/component-diagram.jpeg)
 
 Source: [Yoni Goldberg](https://github.com/nadvolod/component-tests-workshop/blob/main/graphics/component-diagram.jpg)
+
+#### Advantages of component tests
+
+❌ browser
+
+❌ server
+
+❌ network issues
+
+✅Tests run in ms
+
+❌ extra dependency (Cypress)
+
+❌ extra dependency API
 
 Our app was created using `create-react-app`. With this method, we automatically get a few cool things for testing:
 * @testing-library
@@ -107,13 +128,18 @@ test('renders learn react link', () => {
 
 ### Run the component test
 
-* Stop Cypress
-* In your current directory (my-react-app), execute `npm run test`. The test should pass, even though our app isn't running.
+> Cypress doesn't support component tests yet. So we need to use other libraries.
+
+* Stop Cypress server
+* In your current directory (my-react-app), execute `npm run test`. 
+  * The tests should pass, even though our app isn't running.
 
 💡 'p' to filter tests down to a specific file
 💡 'o' to run tests only in the changed files
 
+---
 #### ❓What does the Cypress test validate that the component test does not❓
+---
 
 ### 💡How to add a test id to our app
 
@@ -147,6 +173,7 @@ Ever wondered how easy it is to add an attribute to an HTML element? Let's provi
 | App looks as expected on web and mobile  | 🙅‍♂️ |   |   |
 | Front-end performance is at least a B  | 🙅‍♂️ |   |   |
 | App is secure  | 🙅‍♂️ |   |   |
+| Multiple other testing types...  | 🙅‍♂️ |   |   |
 
 ### 🔗Testing links (the right way)
 

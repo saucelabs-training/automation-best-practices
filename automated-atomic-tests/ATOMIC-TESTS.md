@@ -97,4 +97,4 @@ We're going to break down this test into atomic ones.
 
 ✅ We can bypass a login by directly modifying sessionStorage in the browser (although most apps don't actually function like this)
 
-🏃‍♀️Let's learn more about [automating logins](./../login-testing/)
+🏃‍♀️Let's learn more about [automating logins](../login-testing/LOGINS.md)

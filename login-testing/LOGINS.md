@@ -10,10 +10,14 @@
 
 ### ⚙️Setup
 
+>We will use https://github.com/nadvolod/cypress-example-recipes only for login testing
+
 1. Stop the other processes from previous exercises `Ctrl + C`
 2. Fork https://github.com/nadvolod/cypress-example-recipes
 3. Clone your fork to your machine
 1. Start cypress and the app
+
+
 ```bash
 cd cypress-example-recipes
 npm install
@@ -21,7 +25,7 @@ cd examples/logging-in__html-web-forms/
 npm run dev
 ```
 
-!We will only work in https://github.com/nadvolod/cypress-example-recipes for login testing
+>We will use https://github.com/nadvolod/cypress-example-recipes only for login testing
 
 ### Exploring the app
 
@@ -144,4 +148,4 @@ There are numerous other ways that we can authenticate:
 4. CSRF tokens
 5. Basic auth
 
-[Learn more by looking at the logging-in examples](https://github.com/nadvolod/cypress-example-recipes)
+[Learn more by looking at the logging-in examples folders](https://github.com/nadvolod/cypress-example-recipes/tree/master/examples)
