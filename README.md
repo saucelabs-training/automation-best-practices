@@ -51,10 +51,11 @@ We will focus on a holistic approach of testing front-end and back-end, web and 
 ## ⚙️ Setup
 
 ### 1. Install Node 14 LTS
-  * Use NVM for this installation by [following instructions](https://github.com/nvm-sh/nvm#install--update-script)
-  * It should be just a single command to run in our terminal
-  * After installation, confirm install was correct by runnin `nvm` and seeing an output
-  * Intall Node 14 with `nvm install 14` 
+  - Use NVM for this installation by [following instructions](https://github.com/nvm-sh/nvm#install--update-script)
+   -  It should be just a single command to run in our terminal
+   -  **!Don't forget to restart your terminal!**
+  - After installation, confirm install was correct by running `nvm` and seeing an output
+  - Intall Node 14 with `nvm install 14` 
   
   Here's what the output would look like:
   ```
@@ -66,7 +67,7 @@ We will focus on a holistic approach of testing front-end and back-end, web and 
   Now using node v14.16.1 (npm v6.14.12)
   Creating default alias: default -> 14 (-> v14.16.1)
   ```
-  * **!Don't forget to restart your terminal!**
+  
   * Confirm node installation with `node --version` and seeing `v14.16.1` or similar
   * Confirm NVM is set to 14 for default by running the following commands:
 
