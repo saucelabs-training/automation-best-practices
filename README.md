@@ -88,7 +88,9 @@ nvm alias default 14.16.x #to set it to the default
 ```bash
 git clone URL_OF_YOUR_FORK
 ```
-4. Navigate to the directory of where you cloned your repo
+4. **Navigate to the directory of where you cloned your repo**
+
+`cd YOUR_FORK_DIR/automation-best-practices`
 
 ### 3.Install the app
 ```bash
