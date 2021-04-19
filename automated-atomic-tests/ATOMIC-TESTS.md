@@ -66,7 +66,7 @@ describe('Shopping cart', () => {
 ### 🏋️‍♀️ Get started with Cypress
 
 1. `npm install`
-2. `npm run cy:open`
+2. `npx cypress open`
 3. Open `exercise.spec.js`. Please don't peek at the `solution.spec.js`🙏. The workshop is more fun when we struggle together 😁
 
 ### 🏋️‍♀️ Automated atomic tests exercise

@@ -17,8 +17,8 @@
 
 ## Set up a visual test
 
-1. Create a new file `src/test/specs/exercise.spec.js`
-2. Add the following code
+1. Create a new file `my-react-app/test/specs/exercise.spec.js`
+2. Paste the following code
 
 ```js
 describe('My React application', () => {
@@ -35,7 +35,7 @@ describe('My React application', () => {
 ### 🏋️‍♀️ Expand the config to cover iOS and Android
 
 In today's day and age, everything must be responsive, so let's make sure that our app looks good on iOS web.
-Hint, use these capabilities:
+Hint, use these capabilities in `wdio.conf.js`:
 
 ```js
         //iphone X
@@ -60,7 +60,7 @@ We're going to update the React image to something better. What tests should bre
 * Drag n drop a new image to the `/src`
 * Fix the path to be correct here `import logo from './mia.jpg';` in `App.js`
 * Save all files
-* Stop the app
+* Stop the app `ctrl + C`
 * Restart the app with `npm start`
 * Rerun the visual tests with `npm run test:visual`
 * Analyze the results in Screener dashboard

@@ -1,6 +1,8 @@
 # Full Coverage Testing
 
-> We are back to `https://github.com/saucelabs-training/automation-best-practices` and will work here for the rest of the workshop!
+> We are back to `https://github.com/saucelabs-training/automation-best-practices` and will work here for  the rest of the workshop!
+
+> Everything will only be taught from `my-react-app` directory
 
 ## 🧠You will learn
 
@@ -146,10 +148,10 @@ test('renders learn react link', () => {
 Ever wondered how easy it is to add an attribute to an HTML element? Let's provide a better locator for our app.
 
 #### 🏋️‍♀️Add a `data-testid` attribute to our element
-1. Go to `App.js`
+1. Open `my-react-app/src/App.js`
 2. In the `<a>` of the App component add a `data-testid` property
 
-```js
+```html
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -177,18 +179,17 @@ Ever wondered how easy it is to add an attribute to an HTML element? Let's provi
 
 ### 🔗Testing links (the right way)
 
-🏋️‍♀️Write a check to test the link
-1. Go to `cypress/integration/exercise.spec.js`
-2. Write a test for clicking the link
+Here's an e2e test to validate that a link works
 
-```js
+```javascript
 it('should click link',()=>{
      cy.visit('/');
-     cy.get('[data-testid=learn-link]').click().url().should('contain','reactjs.org');
+     cy.get('[data-testid=learn-link]').click().url().should('contain','ultimateqa.com');
  })
 ```
-
+---
 ❓Why is this test bad❓
+---
 
 1. Cypress will never have multi-tab support
 2. We should never need to test that a link is clickable, this is the browser's native behavior
@@ -199,15 +200,13 @@ it('should click link',()=>{
 💡We don't need a browser to actually test a link click, so why not use a fast component test?
 
 1. Make sure that you run `npm test` if it's not running already
-2. Go to `src/__tests__/App.test.js` and write a test that looks like this
+2. Go to `src/__tests__/Exercise.test.js` and write a test that looks like this
 
 ```js
 test('link has correct url', () => {
   //render our App component in a virtual DOM
   render(<App />);
-  //search for an element by text
-  const linkElement = screen.getByTestId('learn-link');
-  //Using Jest matchers: https://jestjs.io/docs/using-matchers
+  const linkElement = screen.screen.getByTestId('learn-link')
   expect(linkElement.href).toContain('ultimateqa');
 })
 ```
