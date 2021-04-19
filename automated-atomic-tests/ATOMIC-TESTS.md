@@ -92,6 +92,9 @@ We're going to break down this test into atomic ones.
 ## 📔Summary
 
 ✅ Automated atomic tests validate a single feature
-✅ Testing a login is only necessary once
+
+✅ Testing a login through the UI is only necessary once
+
+✅ We can bypass a login by directly modifying sessionStorage in the browser (although most apps don't actually function like this)
 
 🏃‍♀️Let's learn more about [automating logins](./../login-testing/)

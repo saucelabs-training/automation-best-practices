@@ -10,10 +10,11 @@
 
 ### ⚙️Setup
 
-Fork https://github.com/nadvolod/cypress-example-recipes
-
+1. Stop the other processes from previous exercises `Ctrl + C`
+2. Fork https://github.com/nadvolod/cypress-example-recipes
+3. Clone your fork to your machine
+1. Start cypress and the app
 ```bash
-git clone https://github.com/nadvolod/cypress-example-recipes
 cd cypress-example-recipes
 npm install
 cd examples/logging-in__html-web-forms/
@@ -24,7 +25,7 @@ npm run dev
 
 ### Exploring the app
 
-Our simple web app is protected by a web form
+Our simple web app is protected by a HTML web form
 
 1. Try to open the URL `http://localhost:7077/`
 2. Try to login with valid credentials `jane.lane` and `password123`. Pay attention to the requests and behavior of the application
@@ -35,10 +36,6 @@ Some expected app behaviors
 2. /users only allowed for authenticated users
 2. /dashboard only allowed for authenticated users
 3. Only user `jane.lane` and `password123` can access the app
-
-
-### ❓What tests can we create to validate the behavior of this app❓
-
 
 
 Open `inneficient.spec.js` 
@@ -54,7 +51,7 @@ So let's improve our tests...
 ### 🏋️‍♀️Exercise
 
 1. Open `exercise.spec.js`
-1. Create a test that can visit `/dashboard` without a UI login
+1. Create a test that can visit `/dashboard` without a UI login (We'll do this together)
 2. Create a test that can visit `/users` without a UI login
 3. Create a test that can visit `/admin` without a UI login
 
@@ -121,15 +118,7 @@ if (user.token) {
 
 [Building and testing an auth API with JWT tutorial](https://www.youtube.com/watch?v=klIAT82UtVs)
 
-### ❓What tests can we create to test this app❓
-
-| Test  | System Level  | Positive/Negative  |
-|---|---|---|
-| Login with valid credentials  | UI  | Positive  |
-| Login with invalid credentials  |   | Negative  |
-|   |   |   |
-
-### 🏋️‍♀️Atomic login tests (20min)
+### 🏋️‍♀️Atomic login tests (25min)
 
 Open `cypress/integration/exercise.spec.js`
 Your challenge is to create 2 tests:
