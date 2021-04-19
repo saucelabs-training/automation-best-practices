@@ -78,8 +78,9 @@ nvm alias default 14.16.x #to set it to the default
 
 
 ### 2.Clone and fork the repo
-1. Fork this respository
- * Make sure you are loggin into Github
+1. Sign up for a free [Github account](https://github.com/)
+2. Fork this respository
+ * Make sure you are logged into Github
  * click the Fork in the upper right of the Github.
 3. Clone your fork of the repository to your machine
 
@@ -109,10 +110,12 @@ Note that the development build is not optimized.
 To create a production build, use npm run build.
 ```
 ### 4.Have an IDE installed that can handle NodeJS (We will use [VSCode](https://code.visualstudio.com/Download))
-### 5.Sign up for a free [Sauce account](https://saucelabs.com/sign-up)
-### 6.Sign up for a free [Github account](https://github.com/)
 
-### 7.Set Your Sauce Labs Credentials
+#### ✅👏Congratulations, you're 95% ready!
+
+### 5.Sign up for a free [Sauce account](https://saucelabs.com/sign-up)
+
+### 6.Set Your Sauce Labs Credentials
 1. Copy your Sauce Labs **username** and **accessKey** in the [User Settings](https://app.saucelabs.com/user-settings) section of the [Sauce Labs Dashboard](https://app.saucelabs.com/dashboard/builds).
 2. Open a Terminal window (command prompt for Windows) and set your Sauce Labs Environment variables:   
    ###### Mac OSX:
