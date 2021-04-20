@@ -32,7 +32,7 @@ describe('My React application', () => {
 3. `npm run test:visual`
 4. View your results in Screener.io 
 
-### 🏋️‍♀️ Expand the config to cover iOS and Android
+### Expand the config to cover iOS and Android
 
 In today's day and age, everything must be responsive, so let's make sure that our app looks good on iOS web.
 Hint, use these capabilities in `wdio.conf.js`:
@@ -52,8 +52,9 @@ Hint, use these capabilities in `wdio.conf.js`:
             }
         }
 ```
-
+---
 ### 🏋️‍♀️❓ Let's change our image, what tests should that break❓
+---
 
 We're going to update the React image to something better. What tests should break?
 

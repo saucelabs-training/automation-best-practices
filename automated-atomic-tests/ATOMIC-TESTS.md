@@ -67,7 +67,8 @@ describe('Shopping cart', () => {
 
 1. `npm install`
 2. `npx cypress open`
-3. Open `exercise.spec.js`. Please don't peek at the `solution.spec.js`🙏. The workshop is more fun when we struggle together 😁
+3. Open `exercise.spec.js` in Cypress UI. Please don't peek at the `solution.spec.js`🙏. The workshop is more fun when we struggle together 😁
+   1. The test files are also in the directory `automated-atomic-tests/cypress/integration`
 
 ### 🏋️‍♀️ Automated atomic tests exercise
 

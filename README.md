@@ -114,9 +114,26 @@ You can now view my-react-app in the browser.
 Note that the development build is not optimized.
 To create a production build, use npm run build.
 ```
+
+Once it's running, kill the server by executing `Ctrl + C` in command line
+
 ### 4.Have an IDE installed that can handle NodeJS (We will use [VSCode](https://code.visualstudio.com/Download))
 
-#### ✅👏Congratulations, you're 95% ready!
+#### ✅👏Congratulations, you're 90% ready!
+
+### 5.Fork, clone, install the cypress-examples repo
+
+We will have a 2nd repo from which we work from only for login testing.
+
+1. Fork https://github.com/nadvolod/cypress-example-recipes
+2. Clone this repo to another directory (we will open it as a separate project later in the workshop)
+3. Install everything
+
+
+```bash
+cd cypress-example-recipes
+npm i
+```
 
 ### 5.Sign up for a free [Sauce account](https://saucelabs.com/sign-up)
 
