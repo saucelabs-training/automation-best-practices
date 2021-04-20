@@ -206,7 +206,7 @@ it('should click link',()=>{
 test('link has correct url', () => {
   //render our App component in a virtual DOM
   render(<App />);
-  const linkElement = screen.screen.getByTestId('learn-link')
+  const linkElement = screen.getByTestId('learn-link')
   expect(linkElement.href).toContain('ultimateqa');
 })
 ```
