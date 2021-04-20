@@ -114,8 +114,9 @@ You can now view my-react-app in the browser.
 Note that the development build is not optimized.
 To create a production build, use npm run build.
 ```
+**Don't worry about fixing any warnings that may appear during `npm install`**
 
-Once it's running, kill the server by executing `Ctrl + C` in command line
+Once the app is running, kill the server by executing `Ctrl + C` in command line. We don't need the app running right now.
 
 ### 4.Have an IDE installed that can handle NodeJS (We will use [VSCode](https://code.visualstudio.com/Download))
 
