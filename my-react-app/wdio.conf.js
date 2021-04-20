@@ -1,6 +1,6 @@
 const visualOptions = {
     apiKey: process.env.SCREENER_API_KEY,
-    projectName: 'my-react-app',
+    projectName: 'new-app',
     scrollAndStitchScreenshots: true
 };
 const sauceOptions = {

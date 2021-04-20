@@ -1,10 +1,11 @@
 /// <reference types="cypress" />
-it('loads', ()=> {
+it.only('loads', ()=> {
     /** Your code below */
 
     //1. Use cy.visit('') to go to the app url
+    cy.visit('')
     //2. Use cy.get('element locator').should('be.visible') to assert valid state
-      
+    cy.get('.App-link').should('be.visible')
     /** Your code above */
 })
 

@@ -52,5 +52,4 @@ jobs:
     - name: Run visual tests 👁
       run: |
         cd my-react-app
-        echo $SAUCE_USERNAME
         npm run test:visual
