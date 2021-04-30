@@ -10,9 +10,10 @@
 
 Let's quickly explore the software that we will test.
 
-1. Open the demo app at `https://www.saucedemo.com/v1`
-2. Try a login (the login works by setting session storage)
-3. Try to add a product
+1. Download Edge browser (our demo app is not working correctly in chrome)
+2. Open the demo app at `https://www.saucedemo.com/v1`
+3. Try a login (the login works by setting session storage)
+4. Try to add a product
 
 ## Automated atomic tests
 
@@ -65,9 +66,10 @@ describe('Shopping cart', () => {
 
 ### 🏋️‍♀️ Get started with Cypress
 
-1. `npm install`
-2. `npx cypress open`
-3. Open `exercise.spec.js` in Cypress UI. Please don't peek at the `solution.spec.js`🙏. The workshop is more fun when we struggle together 😁
+1. `cd automated-atomic-tests`
+2. `npm install`
+3. `npx cypress open`
+4. Open `exercise.spec.js` in Cypress UI and make sure that Edge browser is selected. Please don't peek at the `solution.spec.js`🙏. The workshop is more fun when we struggle together 😁
    1. The test files are also in the directory `automated-atomic-tests/cypress/integration`
 
 ### 🏋️‍♀️ Automated atomic tests exercise

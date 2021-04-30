@@ -1,3 +1,5 @@
 {
-  "baseUrl": "https://www.saucedemo.com/v1"
+  "baseUrl": "https://www.saucedemo.com/v1",
+  "//":"disable chromeWebSecurity because our demo app has some insecure content",
+  "chromeWebSecurity": false
 }
