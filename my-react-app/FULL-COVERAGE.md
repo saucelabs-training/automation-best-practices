@@ -75,11 +75,6 @@ Open application at http://localhost:3000/
 
 ## Can we test the same thing more efficiently❓
 
-1. Stop the App server (`Ctrl + C` in the terminal of your app)
-2. Rerun Cypress test
-3. ❓Why does the test fail?
-4. ❓Does our app still work?
-
 
 ## Component tests
 
