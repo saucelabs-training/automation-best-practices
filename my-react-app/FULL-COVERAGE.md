@@ -73,7 +73,7 @@ Open application at http://localhost:3000/
 5. Need an extra dependency (Cypress)
 6. Need to learn extra dependency API
 
-## Can we test the same thing more efficiently❓
+**Can we test the same thing more efficiently❓**
 
 
 ## Component tests
