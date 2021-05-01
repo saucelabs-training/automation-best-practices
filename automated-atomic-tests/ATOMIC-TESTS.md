@@ -12,8 +12,9 @@ Let's quickly explore the software that we will test.
 
 1. Download Edge browser (our demo app is not working correctly in chrome)
 2. Open the demo app at `https://www.saucedemo.com/v1`
-3. Try a login (the login works by setting session storage)
-4. Try to add a product
+* **The app has some old issues and you will need to open in Incognito Chrome or on Edge. The same thing will apply when we test it with Cypress.**
+4. Try a login (the login works by setting session storage)
+5. Try to add a product
 
 ## Automated atomic tests
 
