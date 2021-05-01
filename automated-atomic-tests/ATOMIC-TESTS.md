@@ -72,6 +72,8 @@ describe('Shopping cart', () => {
 4. Open `exercise.spec.js` in Cypress UI and make sure that Edge browser is selected. Please don't peek at the `solution.spec.js`🙏. The workshop is more fun when we struggle together 😁
    1. The test files are also in the directory `automated-atomic-tests/cypress/integration`
 
+#### 👀Cypress and code overview
+
 ### 🏋️‍♀️ Automated atomic tests exercise
 
 We're going to break down this test into atomic ones.

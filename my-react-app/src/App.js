@@ -1,5 +1,5 @@
 import './App.css';
-import logo from './logo.svg';
+import logo from './mia.jpg';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
           href="https://www.ultimateqa.com"
           target="_blank"
           rel="noopener noreferrer"
-          data-testid="learn-link"
+          //data-testid="learn-link"
         >
           Learn Testing with Mia
         </a>
