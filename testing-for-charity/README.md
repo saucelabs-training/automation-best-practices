@@ -123,85 +123,46 @@ git clone URL_OF_YOUR_FORK
 
 ### 3.Install the app
 ```bash
-cd my-react-app
-npm install
-npm run start
+cd testing-for-charity/my-react-app
+npm install && npm start
 ```
+<br/>
+<details>
+  <summary>
+    <strong>Click here</strong> to see an example output.
+  </summary>
 
-Expected Output:
+  <code>
 
-Your output should look similar to this
-```
-Compiled successfully!
+    Compiled successfully!
 
-You can now view my-react-app in the browser.
+    You can now view my-react-app in the browser.
 
-  Local:            http://localhost:3000
-  On Your Network:  http://172.20.10.2:3000
+      Local:            http://localhost:3000
+      On Your Network:  http://172.20.10.2:3000
 
-Note that the development build is not optimized.
-To create a production build, use npm run build.
-```
+    Note that the development build is not optimized.
+    To create a production build, use npm run build.
+  </code>
+</details>
+
+  <br/><br/>
+
+
 **Don't worry about fixing any warnings that may appear during `npm install`**
 
 Once the app is running, kill the server by executing `Ctrl + C` in command line. We don't need the app running right now.
 
-### 4.Have an IDE installed that can handle NodeJS (We will use [VSCode](https://code.visualstudio.com/Download))
+### 4.Have an IDE installed that can handle NodeJS/JS (We will use [VSCode](https://code.visualstudio.com/Download))
 
-#### ✅👏Congratulations, you're 90% ready!
-
-### 5.Fork, clone, install the cypress-examples repo
-
-We will have a 2nd repo from which we work from only for login testing.
-
-1. Fork https://github.com/nadvolod/cypress-example-recipes
-2. Clone this repo to another directory (we will open it as a separate project later in the workshop)
-3. Install everything
-
-
-```bash
-cd cypress-example-recipes
-npm i
-```
+#### ✅👏Congratulations, your environment is ready!
 
 ### 5.Sign up for a free [Sauce account](https://saucelabs.com/sign-up)
 
 ### 6.Set Your Sauce Labs Credentials
-1. Copy your Sauce Labs **username** and **accessKey** in the [User Settings](https://app.saucelabs.com/user-settings) section of the [Sauce Labs Dashboard](https://app.saucelabs.com/dashboard/builds).
-2. Open a Terminal window (command prompt for Windows) and set your Sauce Labs Environment variables:   
-   ###### Mac OSX:
-   ```
-   $ export SAUCE_USERNAME="username"
-   $ export SAUCE_ACCESS_KEY="accessKey"
-   ```
-   ###### Windows:
-   ```
-   > set SAUCE_USERNAME="username"
-   > set SAUCE_ACCESS_KEY="accessKey"
-   ```
-   > To set an environment variables permanently in Windows, you must append it to the `PATH` variable.
-   
-   > Go to **Control Panel > System > Windows version > Advanced System Settings > Environment Variables > System Variables > Edit > New**
-   
-   > Then set the "Name" and "Value" for each variable
-   
-9. Test the environment variables
-    ###### Mac OSX:
-    ```
-    $ echo $SAUCE_USERNAME
-    $ echo $SAUCE_ACCESS_KEY
-    ```
-    > ***WARNING FOR UNIX USERS!***:
-    > If you have problems setting your environment variables, run the following commands in your terminal:
-    ```
-    $ launchctl setenv SAUCE_USERNAME $SAUCE_USERNAME
-    $ launchctl setenv SAUCE_ACCESS_KEY $SAUCE_ACCESS_KEY
-    ```
-    ###### Windows:
-    ```
-    > echo %SAUCE_USERNAME%
-    > echo %SAUCE_ACCESS_KEY%
-    ```
+
+* [MacOS/Linux](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables-on-macos-and-linux-systems)
+* [Windows](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables-on-windows-systems)
 
 
 
