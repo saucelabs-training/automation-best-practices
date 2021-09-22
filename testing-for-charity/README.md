@@ -6,7 +6,7 @@ We will focus on a holistic approach of testing front-end and back-end, web and 
 
 ## testing for charity
 
-![Testing for charity](../graphics/testing-charity.png)
+![Testing for charity](../graphics/testing-for-charity.png)
 
 This workshop serves 2 purposes:
 

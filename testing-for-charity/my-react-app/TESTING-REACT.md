@@ -1,9 +1,5 @@
 # Full Coverage Testing
 
-> We are back to `https://github.com/saucelabs-training/automation-best-practices` and will work here for  the rest of the workshop!
-
-> Everything will only be taught from `my-react-app` directory
-
 ## 🧠You will learn
 
 ✅How to write a component test 
@@ -16,23 +12,22 @@
 
 ## ⚙️ Setup
 
-> We are back to `https://github.com/saucelabs-training/automation-best-practices` and will work here for the rest of the workshop!
-
 1. Stop all servers from previous session (`Ctrl + C` everything)
 2. cd `my-react-app`
-3. `npm install`
-4. `npm start`
+3. `npm install && npm start`
 
 Open application at http://localhost:3000/
 
-## 🧪Testing Strategy
+## 🧪Our Testing Strategy
 
 | Expected Behavior  | Tested? | Test Type  | Technologies  |
 |---|---|---|---|
 | Application renders  | 🙅‍♂️ | Component/UI/unit | React testing library, Jest |
 | Learn React link goes to correct location | 🙅‍♂️ |  |  |
 | Learn React link opens in new tab  | 🙅‍♂️ |  |  |
-| App looks as expected on web and mobile  | 🙅‍♂️ |   |   |
+| App looks as expected on Chrome + Safari on most popular resolution  | 🙅‍♂️ |   |   |
+| App looks as expected on iPhone 12, 12 Pro Max  | 🙅‍♂️ |   |   |
+| App is accessibility friendly  | 🙅‍♂️ |   |   |
 | Front-end performance is at least a B  | 🙅‍♂️ |   |   |
 | App is secure  | 🙅‍♂️ |   |   |
 | Multiple other testing types...  | 🙅‍♂️ |   |   |

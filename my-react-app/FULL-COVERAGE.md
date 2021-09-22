@@ -99,7 +99,7 @@ Source: [Yoni Goldberg](https://github.com/nadvolod/component-tests-workshop/blo
 
 ❌ network issues
 
-✅Tests run in ms
+✅ Tests run in ms
 
 ❌ extra dependency (Cypress)
 
