@@ -40,15 +40,20 @@ Open application at http://localhost:3000/
 * `npx cypress open`
 * Write a test to ensure our app renders `cypress/integration/exercise.spec.js`
 ---
-## ❓Does this test guarantee that our app works as expected?
+## ❓What does this test check?
 ---
-✅ App has corresponding class visible
 
-✅ App renders in UI
-
-❓ Does the app look as intended
-
-❓ Does the app work as intended
+| Expected Behavior  | Tested? | Test Type  | Technologies  |
+|---|---|---|---|
+| Application renders  | ✅ | UI | Cypress |
+| Learn React link goes to correct location | 🙅‍♂️ |  |  |
+| Learn React link opens in new tab  | 🙅‍♂️ |  |  |
+| App looks as expected on Chrome + Safari on most popular resolution  | 🙅‍♂️ |   |   |
+| App looks as expected on iPhone 12, 12 Pro Max  | 🙅‍♂️ |   |   |
+| App is accessibility friendly  | 🙅‍♂️ |   |   |
+| Front-end performance is at least a B  | 🙅‍♂️ |   |   |
+| App is secure  | 🙅‍♂️ |   |   |
+| Multiple other testing types...  | 🙅‍♂️ |   |   |
 
 ---
 
