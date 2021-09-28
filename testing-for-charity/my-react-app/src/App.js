@@ -16,7 +16,7 @@ function App() {
           rel="noopener noreferrer"
           //data-testid="learn-link"
         >
-          Learn Testing with Mia
+          Learn React
         </a>
       </header>
     </div>
