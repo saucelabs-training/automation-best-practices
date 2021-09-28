@@ -2,17 +2,25 @@
 it('loads', ()=> {
     /** Your code below */
 
-    //1. Use cy.visit('') to go to the app url
+    //1. Use cy.visit('/') to go to the app url
     //2. Use cy.get('.App-link').should('be.visible') to assert valid state
     /** Your code above */
 })
 
-it('should click link',()=>{
+it('link goes to ultimateqa', ()=> {
     /** Your code below */
-    
-    //1. Use cy.visit('') to go to the app url
-    //2. Use cy.get('element locator') for the link
-    // But now we will .click() the link and then assert that the 
-    // .url().should('not.contain','ultimateqa.com');
+
+    // 1. Use cy.visit('/') to go to the app url
+    // 2. cy.get('').should('have.attr', 'href').and('include', 'ultimateqa.com')
+
     /** Your code above */
 })
+
+it('should open link in new tab',()=> {
+    /** Your code below */
+
+    // 1. Cmon, you know how to open the url now :)
+    // 2. cy.get('').should('have.attr', 'WHAT').and('include', 'WHAT VALUE')
+
+    /** Your code above */
+})  

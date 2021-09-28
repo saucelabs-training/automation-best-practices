@@ -58,6 +58,8 @@ npx cypress open
 
 ---
 
+## 🧪Current Test Coverage
+
 | Expected Behavior  | Tested? | Test Type  | Technologies  |
 |---|---|---|---|
 | Application renders  | ✅ | Functional UI | Cypress |
@@ -95,22 +97,11 @@ it('should click link',()=>{
 1. We should never need to test that a link is clickable, this is the browser's native behavior
 2. We should never need to test that a link opens a new tab
 
-### 🏋️‍♀️Write a test to validate link behavior
+### 🏋️‍♀️Write a test to ensure that the link will go to the correct location
 
-💡We don't need a browser to actually test a link click, so why not use a fast component test?
+1. In your IDE open `cypress/integration/exercise.spec.js`
+2. Follow instructions to implement `it('link goes to ultimateqa')` test
 
-1. Make sure that you run `npm test` if it's not running already
-2. Go to `src/__tests__/Exercise.test.js` and write a test that looks like this
-
-```js
-test('link has correct url', () => {
-  //render our App component in a virtual DOM
-  render(<App />);
-  const linkElement = screen.getByTestId('learn-link')
-  expect(linkElement.href).toContain('ultimateqa');
-})
-```
-1. Save and the test runs automatically
 
 ---
 
@@ -118,13 +109,31 @@ test('link has correct url', () => {
 
 ---
 
+## 🧪Current Test Coverage
+
+| Expected Behavior  | Tested? | Test Type  | Technologies  |
+|---|---|---|---|
+| Application renders  | ✅ | Functional UI | Cypress |
+| Learn React link goes to correct location | 🙅‍♂️ |  |  |
+| Learn React link opens in new tab  | 🙅‍♂️ |  |  |
+
+---
+
 ❓What if we wanted to test that the link opens in a new tab❓
+
+---
 
 👀 Working with 'target' attribute
 
-🏋️‍♀️Write a component test to validate that link opens in a new tab
+🏋️‍♀️Write a functional ui test to validate that the link opens in a new tab
 
-❓Is our app fully tested now❓
+## 🧪Current Test Coverage
+
+| Expected Behavior  | Tested? | Test Type  | Technologies  |
+|---|---|---|---|
+| Application renders  | ✅ | Functional UI | Cypress |
+| Learn React link goes to correct location | ✅ | Functional UI | Cypress |
+| Learn React link opens in new tab  | 🙅‍♂️ |  |  |
 
 ### ❓What are the disadvantages of functional UI tests?
 ---
@@ -210,6 +219,24 @@ test('renders learn react link', () => {
 💡 'p' to filter tests down to a specific file
 
 💡 'o' to run tests only in the changed files
+
+### Testing links with component tests
+
+💡We don't need a browser to actually test a link click, so why not use a fast component test?
+
+1. Make sure that you run `npm test` if it's not running already
+2. Go to `src/__tests__/Exercise.test.js` and write a test that looks like this
+
+```js
+test('link has correct url', () => {
+  //render our App component in a virtual DOM
+  render(<App />);
+  const linkElement = screen.getByTestId('learn-link')
+  expect(linkElement.href).toContain('ultimateqa');
+})
+```
+1. Save and the test runs automatically
+
 
 ---
 #### ❓What does the Cypress test validate that the component test does not❓
