@@ -3,7 +3,7 @@ it('loads', ()=> {
     /** Your code below */
 
     //1. Use cy.visit('') to go to the app url
-    //2. Use cy.get('element locator').should('be.visible') to assert valid state
+    //2. Use cy.get('.App-link').should('be.visible') to assert valid state
     /** Your code above */
 })
 
