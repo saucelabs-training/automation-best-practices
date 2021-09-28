@@ -33,19 +33,34 @@ Open application at http://localhost:3000/
 | Multiple other testing types...  | 🙅‍♂️ |   |   |
 
 ## What is the most basic test that we can write for our application?
-* How about making sure that our app renders?
 
-### 🏋️‍♀️Write a cypress test to make sure that our app opens.
+* How about a functional browser test sure that our app renders?
 
-* `npx cypress open`
-* Write a test to ensure our app renders `cypress/integration/exercise.spec.js`
+## Cypress Overview
+
+"Fast, easy and reliable testing for anything that runs in a browser."([Cypress.io](https://www.cypress.io/))
+
+```bash
+cd testing-for-charity/my-react-app
+npx cypress open
+```
+
+💡 Tests live in `cypress/integration` folder
+
+### 🏋️‍♀️Write a Cypress test to make sure that our app opens.
+
+1. In your IDE open `cypress/integration/exercise.spec.js`
+2. Follow instructions to implement `it('loads')` test
+   
 ---
-## ❓What does this test check?
+
+### ❓What does this test validate?
+
 ---
 
 | Expected Behavior  | Tested? | Test Type  | Technologies  |
 |---|---|---|---|
-| Application renders  | ✅ | UI | Cypress |
+| Application renders  | ✅ | Functional UI | Cypress |
 | Learn React link goes to correct location | 🙅‍♂️ |  |  |
 | Learn React link opens in new tab  | 🙅‍♂️ |  |  |
 | App looks as expected on Chrome + Safari on most popular resolution  | 🙅‍♂️ |   |   |
@@ -57,14 +72,62 @@ Open application at http://localhost:3000/
 
 ---
 
-### 🏋️‍♀️ Stop the application and rerun the test
+### ❓How do we ensure that the link is correct?
 
-✅ Confirms rendering works as expected
+---
 
-✅ Confirms server is running
+## 🔗Testing links (the right way)
 
+Here's an e2e test to validate that a link works
 
-### What is the disadvantage of this test?
+```js
+it('should click link',()=>{
+     cy.visit('/');
+     cy.get('.App-link').click().url().should('contain','ultimateqa.com');
+ })
+```
+---
+
+### ❓What is the problem with this test❓
+
+---
+
+1. We should never need to test that a link is clickable, this is the browser's native behavior
+2. We should never need to test that a link opens a new tab
+
+### 🏋️‍♀️Write a test to validate link behavior
+
+💡We don't need a browser to actually test a link click, so why not use a fast component test?
+
+1. Make sure that you run `npm test` if it's not running already
+2. Go to `src/__tests__/Exercise.test.js` and write a test that looks like this
+
+```js
+test('link has correct url', () => {
+  //render our App component in a virtual DOM
+  render(<App />);
+  const linkElement = screen.getByTestId('learn-link')
+  expect(linkElement.href).toContain('ultimateqa');
+})
+```
+1. Save and the test runs automatically
+
+---
+
+❓What is the exact validation of this test❓
+
+---
+
+❓What if we wanted to test that the link opens in a new tab❓
+
+👀 Working with 'target' attribute
+
+🏋️‍♀️Write a component test to validate that link opens in a new tab
+
+❓Is our app fully tested now❓
+
+### ❓What are the disadvantages of functional UI tests?
+---
 
 1. Need a browser
 2. Need a server
@@ -73,7 +136,17 @@ Open application at http://localhost:3000/
 5. Need an extra dependency (Cypress)
 6. Need to learn extra dependency API
 
-**Can we test the same thing more efficiently❓**
+**❓Can we test the same thing more efficiently❓**
+
+
+| Expected Behavior  | Tested? | Test Type  | Technologies  |
+|---|---|---|---|
+| Application renders  | ✅ | Component | React testing library, Jest |
+| Learn React link goes to correct location | ✅ | Component | React testing library, Jest |
+| Learn React link opens in new tab  | ✅ | Component | React testing library, Jest |
+| App looks as expected on web and mobile  | 🙅‍♂️ |   |   |
+| Front-end performance is at least a B  | 🙅‍♂️ |   |   |
+| App is secure  | 🙅‍♂️ |   |   |
 
 
 ## Component tests
@@ -87,7 +160,7 @@ There are a few ways to test React components. Broadly, they divide into two cat
 
 ### What is a component test?
 
-![Component tests](./../graphics/component-diagram.jpeg)
+![Component tests](../graphics/../../graphics/component-diagram.jpeg)
 
 Source: [Yoni Goldberg](https://github.com/nadvolod/component-tests-workshop/blob/main/graphics/component-diagram.jpg)
 
@@ -104,6 +177,11 @@ Source: [Yoni Goldberg](https://github.com/nadvolod/component-tests-workshop/blo
 ❌ extra dependency (Cypress)
 
 ❌ extra dependency API
+
+
+### 🏋️‍♀️ Code the component test
+
+> Cypress doesn't support component tests yet. So we need to use other libraries.
 
 Our app was created using `create-react-app`. With this method, we automatically get a few cool things for testing:
 * @testing-library
@@ -125,13 +203,12 @@ test('renders learn react link', () => {
 
 ### Run the component test
 
-> Cypress doesn't support component tests yet. So we need to use other libraries.
-
-* Stop Cypress server
-* In your current directory (my-react-app), execute `npm run test`. 
-  * The tests should pass, even though our app isn't running.
+1. Stop all servers
+2. In your current directory (my-react-app), execute `npm run test`. 
+3. The tests should pass, even though our app isn't running.
 
 💡 'p' to filter tests down to a specific file
+
 💡 'o' to run tests only in the changed files
 
 ---
@@ -172,59 +249,7 @@ Ever wondered how easy it is to add an attribute to an HTML element? Let's provi
 | App is secure  | 🙅‍♂️ |   |   |
 | Multiple other testing types...  | 🙅‍♂️ |   |   |
 
-### 🔗Testing links (the right way)
 
-Here's an e2e test to validate that a link works
-
-```javascript
-it('should click link',()=>{
-     cy.visit('/');
-     cy.get('[data-testid=learn-link]').click().url().should('contain','ultimateqa.com');
- })
-```
----
-❓Why is this test bad❓
----
-
-1. Cypress will never have multi-tab support
-2. We should never need to test that a link is clickable, this is the browser's native behavior
-3. We should never need to test that a link opens a new tab
-
-🏋️‍♀️Write a test to validate link behavior
-
-💡We don't need a browser to actually test a link click, so why not use a fast component test?
-
-1. Make sure that you run `npm test` if it's not running already
-2. Go to `src/__tests__/Exercise.test.js` and write a test that looks like this
-
-```js
-test('link has correct url', () => {
-  //render our App component in a virtual DOM
-  render(<App />);
-  const linkElement = screen.getByTestId('learn-link')
-  expect(linkElement.href).toContain('ultimateqa');
-})
-```
-1. Save and the test runs automatically
-
-❓What does this check actually test❓
-
-❓What if we wanted to test that the link opens in a new tab❓
-
-👀 Working with 'target' attribute
-
-🏋️‍♀️Write a component test to validate that link opens in a new tab
-
-❓Is our app fully tested now❓
-
-| Expected Behavior  | Tested? | Test Type  | Technologies  |
-|---|---|---|---|
-| Application renders  | ✅ | Component | React testing library, Jest |
-| Learn React link goes to correct location | ✅ | Component | React testing library, Jest |
-| Learn React link opens in new tab  | ✅ | Component | React testing library, Jest |
-| App looks as expected on web and mobile  | 🙅‍♂️ |   |   |
-| Front-end performance is at least a B  | 🙅‍♂️ |   |   |
-| App is secure  | 🙅‍♂️ |   |   |
 
 ## 📝Summary
 
