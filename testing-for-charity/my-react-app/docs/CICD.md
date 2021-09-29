@@ -2,11 +2,11 @@
 
 ## 🏋️‍♀️Let's add this code to our CI system.
 
-1. Create a a file in this folder structure `.github/workflows/ci.yml` in the root of your directory
+1. Create a `charity.ci.yml` file in this folder structure `.github/workflows/` in the root of your directory
 2. Paste in the following configuration
 
 ```yml
-name: Node.js CI
+name: Testing for Charity
 env:
   SCREENER_API_KEY: ${{ secrets.SCREENER_API_KEY }}
   SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
@@ -36,32 +36,23 @@ jobs:
     - name: Install dependencies 📦
       #Using npm ci is generally faster than running npm install
       run: |
-        cd my-react-app
+        cd testing-for-charity/my-react-app
         npm ci
     - name: Build the app 🏗
       run: |
-        cd my-react-app
+        cd testing-for-charity/my-react-app
         npm run build
-    - name: Run component tests 🔸
-      run: |
-        cd my-react-app
-        npm run test
     # If we had more time, at this point we can actually deploy our app
     # to a staging server and then run functional tests
     - name: Start the app 📤
       run: |
-        cd my-react-app
+        cd testing-for-charity/my-react-app
         npm start &
         npx wait-on --timeout 60000
     - name: Run functional UI tests 🖥
       run: |
-        cd my-react-app 
+        cd testing-for-charity/my-react-app 
         npm run cy:ci
-    - name: Run visual tests 👁
-      run: |
-        cd my-react-app
-        echo $SAUCE_USERNAME
-        npm run test:visual
 ```
 3. Add New repository secrets for the repo
 
