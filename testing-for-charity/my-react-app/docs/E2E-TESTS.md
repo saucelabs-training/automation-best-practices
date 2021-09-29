@@ -127,6 +127,8 @@ it('should click link',()=>{
 
 🏋️‍♀️Write a functional ui test to validate that the link opens in a new tab
 
+* Follow instructions in this test `it('should open link in new tab')`
+
 ## 🧪Current Test Coverage
 
 | Expected Behavior  | Tested? | Test Type  | Technologies  |
@@ -146,6 +148,20 @@ it('should click link',()=>{
 6. Need to learn extra dependency API
 
 **❓Can we test the same thing more efficiently❓**
+
+## 📝Summary
+
+✅E2E UI teting with Cypress allows us to do functional testing of the web app
+
+✅However, it's extremely inneficient and there are better alternatives
+
+Wouldn't it be great to have this tested automatically through CI?
+
+[Let's setup up CI](./CICD.md)
+
+
+
+
 
 
 | Expected Behavior  | Tested? | Test Type  | Technologies  |
