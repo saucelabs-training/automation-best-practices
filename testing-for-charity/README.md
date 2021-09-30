@@ -52,9 +52,9 @@ Radical action is needed if we are to close the opportunity gap for Black women 
 
 ## Table Of Contents
 
-* [Full coverage testing](./my-react-app/FULL-COVERAGE.md)
-* [Visual E2E testing](./my-react-app/docs/VISUAL.md)
+* [E2E UI testing w/ Cypress](./my-react-app/docs/E2E-TESTS.md)
 * [CICD](./my-react-app/docs/CICD.md)
+* [Visual e2e tesing](./my-react-app/docs/VISUAL.md)
 
 ## About Me
 
@@ -158,6 +158,8 @@ Once the app is running, kill the server by executing `Ctrl + C` in command line
 #### ✅👏Congratulations, your environment is ready!
 
 ### 5.Sign up for a free [Sauce account](https://saucelabs.com/sign-up)
+
+Get your [Screener account](https://saucelabs.com/demo-request-vt)
 
 ### 6.Set Your Sauce Labs Credentials
 

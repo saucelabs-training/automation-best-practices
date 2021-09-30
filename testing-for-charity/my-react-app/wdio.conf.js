@@ -1,7 +1,6 @@
 const visualOptions = {
     apiKey: process.env.SCREENER_API_KEY,
-    projectName: 'new-app',
-    scrollAndStitchScreenshots: true
+    projectName: 'testing-for-charity'
 };
 const sauceOptions = {
     username: process.env.SAUCE_USERNAME,
@@ -57,7 +56,8 @@ exports.config = {
                 ...sauceOptions,
             },
             'sauce:visual':{
-                ...visualOptions
+                ...visualOptions,
+                viewportSize: '1366x768'
             }
         },
         {
@@ -69,7 +69,34 @@ exports.config = {
             },
             'sauce:visual': {
                 ...visualOptions,
-                viewportSize: '375x812'
+                viewportSize: '1366x768'
+            }
+        },
+        // https://yesviz.com/iphones.php
+        // iphone12
+        {
+            browserName: 'safari',
+            platformName: 'macOS 10.15',
+            browserVersion: 'latest',
+            'sauce:options': {
+                ...sauceOptions,
+            },
+            'sauce:visual': {
+                ...visualOptions,
+                viewportSize: '390x844'
+            }
+        },
+        //12 pro max
+        {
+            browserName: 'safari',
+            platformName: 'macOS 10.15',
+            browserVersion: 'latest',
+            'sauce:options': {
+                ...sauceOptions,
+            },
+            'sauce:visual': {
+                ...visualOptions,
+                viewportSize: '428x926'
             }
         }
     ],

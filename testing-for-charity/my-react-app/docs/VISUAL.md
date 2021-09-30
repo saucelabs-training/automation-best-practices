@@ -6,31 +6,56 @@
 
 ✅How to implement visual e2e using WebdriverIO + Screener
 
-## How do we check to make sure that the app looks as expected on web and mobile?
+## 🧪Current Test Coverage
+
+| Expected Behavior  | Tested? | Test Type  | Technologies  |
+|---|---|---|---|
+| Application renders  | ✅ | Functional UI | Cypress |
+| Learn React link goes to correct location | ✅ | Functional UI | Cypress |
+| Learn React link opens in new tab  | ✅ | Functional UI | Cypress |
+| App looks as expected on Chrome + Safari on most popular resolution  | 🙅‍♂️ |   |   |
+| App looks as expected on iPhone 12, 12 Pro Max  | 🙅‍♂️ |   |   |
+
+---
+
+## ❓How do we check to make sure that the app looks as expected on web and mobile?
+
+---
 
 [What is visual testing?](https://docs.google.com/presentation/d/13jYXXoKb36aFt1HLnNnAmsPqw9yaFhVrB4iFH_5_WkI/edit#slide=id.gcc181d5a54_0_284)
 
-## A bit about webdriverIO
+## Our tools
 
-* [WebdrverIO](https://webdriver.io/)
-* [Screener](https://screener.io/)
+### [WebdrverIO](https://webdriver.io/)
+Next-gen browser and mobile automation test framework for Node.js
+
+### [Screener](https://screener.io/)
+Automatically detect visual regressions across your UI
 
 ## Set up a visual test
+
+follow along
 
 1. Create a new file `my-react-app/test/specs/exercise.spec.js`
 2. Paste the following code
 
-```js
-describe('My React application', () => {
-    it('should look correct', () => {
-        browser.url(`/`);
-        browser.execute('/*@visual.init*/', 'My React App');
-        browser.execute('/*@visual.snapshot*/', 'Home Page');
+```javascript
+
+describe('My app', () => {
+    it('should look correct', async () => {
+        await browser.url('');
+        await browser.execute('/*@visual.init*/', 'My React App');
+        await browser.execute('/*@visual.snapshot*/', 'Home Page');
+
+        const result = await browser.execute('/*@visual.end*/');
+        expect(result.message).toBeNull();
     });
 });
+
 ```
-3. `npm run test:visual`
-4. View your results in Screener.io 
+3. `cd testing-for-charity/my-react-app`
+4. `npm run test:visual`
+5. View your results in Screener.io 
 
 ### Expand the config to cover iOS and Android
 
