@@ -47,5 +47,5 @@ jobs:
         npm run cy:ci
     - name: Run visual tests 👁
       run: |
-        cd my-react-app
+        cd testing-for-charity/my-react-app
         npm run test:visual
