@@ -28,18 +28,6 @@ exports.config = {
     // ============
     // Capabilities
     // ============
-    // Define your capabilities here. WebdriverIO can run multiple capabilities at the same
-    // time. Depending on the number of capabilities, WebdriverIO launches several test
-    // sessions. Within your capabilities you can overwrite the spec and exclude options in
-    // order to group specific specs to a specific capability.
-    //
-    // First, you can define how many instances should be started at the same time. Let's
-    // say you have 3 different capabilities (Chrome, Firefox, and Safari) and you have
-    // set maxInstances to 1; wdio will spawn 3 processes. Therefore, if you have 10 spec
-    // files and you set maxInstances to 10, all spec files will get tested at the same time
-    // and 30 processes will get spawned. The property handles how many capabilities
-    // from the same test should run tests.
-    //
     maxInstances: 100,
     //Screener config
     hostname: 'hub.screener.io',
@@ -55,25 +43,11 @@ exports.config = {
             'sauce:options': {
                 ...sauceOptions,
             },
-            'sauce:visual':{
-                ...visualOptions,
-                viewportSize: '1366x768'
-            }
-        },
-        {
-            browserName: 'safari',
-            platformName: 'macOS 10.15',
-            browserVersion: 'latest',
-            'sauce:options': {
-                ...sauceOptions,
-            },
             'sauce:visual': {
                 ...visualOptions,
                 viewportSize: '1366x768'
             }
         },
-        // https://yesviz.com/iphones.php
-        // iphone12
         {
             browserName: 'safari',
             platformName: 'macOS 10.15',
@@ -83,22 +57,36 @@ exports.config = {
             },
             'sauce:visual': {
                 ...visualOptions,
-                viewportSize: '390x844'
+                viewportSize: '1366x768'
             }
         },
-        //12 pro max
-        {
-            browserName: 'safari',
-            platformName: 'macOS 10.15',
-            browserVersion: 'latest',
-            'sauce:options': {
-                ...sauceOptions,
-            },
-            'sauce:visual': {
-                ...visualOptions,
-                viewportSize: '428x926'
-            }
-        }
+        // // https://yesviz.com/iphones.php
+        // // iphone12
+        // {
+        //     browserName: 'safari',
+        //     platformName: 'macOS 10.15',
+        //     browserVersion: 'latest',
+        //     'sauce:options': {
+        //         ...sauceOptions,
+        //     },
+        //     'sauce:visual': {
+        //         ...visualOptions,
+        //         viewportSize: '390x844'
+        //     }
+        // },
+        // //12 pro max
+        // {
+        //     browserName: 'safari',
+        //     platformName: 'macOS 10.15',
+        //     browserVersion: 'latest',
+        //     'sauce:options': {
+        //         ...sauceOptions,
+        //     },
+        //     'sauce:visual': {
+        //         ...visualOptions,
+        //         viewportSize: '428x926'
+        //     }
+        // }
     ],
     // Level of logging verbosity: trace | debug | info | warn | error | silent
     logLevel: 'debug',
