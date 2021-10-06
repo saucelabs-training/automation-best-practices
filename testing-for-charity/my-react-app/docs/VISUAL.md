@@ -4,17 +4,12 @@
 
 ✅What is visual E2E testing? 
 
-✅How to implement visual e2e using WebdriverIO + Screener
+✅How to implement visual e2e testing for a web app
 
 ## 🧪Current Test Coverage
 
-| Expected Behavior  | Tested? | Test Type  | Technologies  |
-|---|---|---|---|
-| Application renders  | ✅ | Functional UI | Cypress |
-| Learn React link goes to correct location | ✅ | Functional UI | Cypress |
-| Learn React link opens in new tab  | ✅ | Functional UI | Cypress |
-| App looks as expected on Chrome + Safari on most popular resolution  | 🙅‍♂️ |   |   |
-| App looks as expected on iPhone 12, 12 Pro Max  | 🙅‍♂️ |   |   |
+[Look here](TEST-COVERAGE.md)
+
 
 ---
 
@@ -67,20 +62,20 @@ describe('My app', () => {
 
 We're going to update the React image to something better. What tests should break?
 
-* Drag n drop a new image to the `/src`
-* Fix the path to be correct here `import logo from './mia.jpg';` in `App.js`
-* Save all files
-* Stop the app `ctrl + C`
-* Restart the app with `npm start`
-* Rerun the visual tests with `npm run test:visual`
-* Analyze the results in Screener dashboard
+1. Drag n drop a new image to the `testing-for-charity/my-react-app/src`
+2. In `App.js`, Fix the path of the image to match your new image name `import logo from './mia.jpg';` 
+2. Save all files
+3. Stop the React app `ctrl + C` in the server terminal
+4. Restart the app with `npm start`
+5. Rerun the visual tests with `npm run test:visual`
+6. Analyze the results in Screener dashboard
+
+## Add a step to CI
+
+
 
 ## 📝Summary
 
-✅Visual e2e testing is a simple and efficient way to test your web app cross-platform
+✅Visual e2e testing is a simple and efficient way to ensure visual consistency cross-platform and cross-OS
 
 ✅We used WebdriverIO + Screener.io to write our visual e2e tests
-
-Wouldn't it be great to have this tested automatically through CI?
-
-[Let's setup up CI](./CICD.md)
