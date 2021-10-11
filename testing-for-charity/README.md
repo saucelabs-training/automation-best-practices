@@ -1,12 +1,12 @@
 # automation best practices workshop
 
+![Testing for good](../graphics/testing-good.jpeg)
+
+[#testing4good](https://twitter.com/hashtag/Testing4Good)
+
 In this automation best practices workshop you will learn the latest and greatest tools and techniques to drastically improve your testing!
 
 We will focus on a holistic approach of testing front-end and back-end, web and APIs, functional testing, component testing, and many other things in between 😁
-
-## testing for charity
-
-![Testing for charity](../graphics/testing-for-charity.png)
 
 This workshop serves 2 purposes:
 
@@ -25,13 +25,9 @@ Radical action is needed if we are to close the opportunity gap for Black women 
 
 ## 🧠You will learn
 
-✅How to write a component test 
+✅how to test a web application using different types of tests
 
-✅How to add a test id to our web app
-
-✅How to correctly test a link and a tab
-
-✅How to replace e2e tests with component tests
+✅functional ui tests with Cypress
 
 ✅visual e2e tests
 
@@ -44,11 +40,9 @@ Radical action is needed if we are to close the opportunity gap for Black women 
 1. ReactJS
 2. Cypress
 3. WebdriverIO
-4. React testing library
-5. Jest
-6. Screener visual E2E testing
-7. Sauce Labs
-8. Github Actions
+4. Screener visual E2E testing
+5. Sauce Labs
+6. Github Actions
 
 ## Table Of Contents
 
@@ -56,8 +50,15 @@ Radical action is needed if we are to close the opportunity gap for Black women 
 * [CICD](./my-react-app/docs/CICD.md)
 * [Visual e2e tesing](./my-react-app/docs/VISUAL.md)
 
-## About Me
+## Key
 
+💡 this is a tip
+
+🏋️‍♀️ this is an exercise for you to do
+
+❓ this is a question for us to think and talk about. Try not to scroll beyond this question before we discuss
+
+## About Me
 
 - 🔭 I’m the founder of [Ultimate QA](https://ultimateqa.com/)
 - 🏢 I’m a Sr Solutions Architect at Sauce Labs
@@ -69,6 +70,9 @@ Radical action is needed if we are to close the opportunity gap for Black women 
   - [Youtube](https://youtube.com/ultimateqa)
   - [LinkedIn](https://www.linkedin.com/in/nikolayadvolodkin/)
   - [Twitter](https://twitter.com/home)
+
+## My Teaching Assistant
+
 
 ## ⚙️ Setup
 
@@ -122,6 +126,7 @@ git clone URL_OF_YOUR_FORK
 `cd YOUR_FORK_DIR/automation-best-practices/testing-for-charity`
 
 ### 3.Install the app
+
 ```bash
 cd testing-for-charity/my-react-app
 npm install && npm start
@@ -170,10 +175,4 @@ Get your [Screener account](https://saucelabs.com/demo-request-vt)
 
 
 
-## Key
 
-💡 this is a tip
-
-🏋️‍♀️ this is an exercise for you to do
-
-❓ this is a question for us to think and talk about. Try not to scroll beyond this question before we discuss

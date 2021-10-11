@@ -72,7 +72,16 @@ We're going to update the React image to something better. What tests should bre
 
 ## Add a step to CI
 
+In your `yml` add this code at the end
 
+```yml
+- name: Run visual tests 👁
+      run: |
+        cd testing-for-charity/my-react-app
+        npm run test:visual
+```
+
+Push the code to Github
 
 ## 📝Summary
 

@@ -1,36 +1,21 @@
-# Full Coverage Testing
+# E2E Browser Tests
 
 ## 🧠You will learn
 
-✅How to write a component test 
+✅How to test a web application with functional browser tests (aka E2E tests)
 
-✅How to add a test id to our web app
-
-✅How to correctly test a link and a tab
-
-✅How to replace e2e tests with component tests
 
 ## ⚙️ Setup
 
 1. Stop all servers from previous session (`Ctrl + C` everything)
-2. cd `my-react-app`
+2. cd `testing-for-charity/my-react-app`
 3. `npm install && npm start`
 
 Open application at http://localhost:3000/
 
 ## 🧪Our Testing Strategy
 
-| Expected Behavior  | Tested? | Test Type  | Technologies  |
-|---|---|---|---|
-| Application renders  | 🙅‍♂️ | Component/UI/unit | React testing library, Jest |
-| Learn React link goes to correct location | 🙅‍♂️ |  |  |
-| Learn React link opens in new tab  | 🙅‍♂️ |  |  |
-| App looks as expected on Chrome + Safari on most popular resolution  | 🙅‍♂️ |   |   |
-| App looks as expected on iPhone 12, 12 Pro Max  | 🙅‍♂️ |   |   |
-| App is accessibility friendly  | 🙅‍♂️ |   |   |
-| Front-end performance is at least a B  | 🙅‍♂️ |   |   |
-| App is secure  | 🙅‍♂️ |   |   |
-| Multiple other testing types...  | 🙅‍♂️ |   |   |
+[Look here](TEST-COVERAGE.md)
 
 ## What is the most basic test that we can write for our application?
 
@@ -60,17 +45,7 @@ npx cypress open
 
 ## 🧪Current Test Coverage
 
-| Expected Behavior  | Tested? | Test Type  | Technologies  |
-|---|---|---|---|
-| Application renders  | ✅ | Functional UI | Cypress |
-| Learn React link goes to correct location | 🙅‍♂️ |  |  |
-| Learn React link opens in new tab  | 🙅‍♂️ |  |  |
-| App looks as expected on Chrome + Safari on most popular resolution  | 🙅‍♂️ |   |   |
-| App looks as expected on iPhone 12, 12 Pro Max  | 🙅‍♂️ |   |   |
-| App is accessibility friendly  | 🙅‍♂️ |   |   |
-| Front-end performance is at least a B  | 🙅‍♂️ |   |   |
-| App is secure  | 🙅‍♂️ |   |   |
-| Multiple other testing types...  | 🙅‍♂️ |   |   |
+[Look here](TEST-COVERAGE.md)
 
 ---
 
@@ -111,11 +86,7 @@ it('should click link',()=>{
 
 ## 🧪Current Test Coverage
 
-| Expected Behavior  | Tested? | Test Type  | Technologies  |
-|---|---|---|---|
-| Application renders  | ✅ | Functional UI | Cypress |
-| Learn React link goes to correct location | 🙅‍♂️ |  |  |
-| Learn React link opens in new tab  | 🙅‍♂️ |  |  |
+[Look here](TEST-COVERAGE.md)
 
 ---
 
@@ -131,13 +102,12 @@ it('should click link',()=>{
 
 ## 🧪Current Test Coverage
 
-| Expected Behavior  | Tested? | Test Type  | Technologies  |
-|---|---|---|---|
-| Application renders  | ✅ | Functional UI | Cypress |
-| Learn React link goes to correct location | ✅ | Functional UI | Cypress |
-| Learn React link opens in new tab  | 🙅‍♂️ |  |  |
+[Look here](TEST-COVERAGE.md)
+
+---
 
 ### ❓What are the disadvantages of functional UI tests?
+
 ---
 
 1. Need a browser
@@ -147,13 +117,17 @@ it('should click link',()=>{
 5. Need an extra dependency (Cypress)
 6. Need to learn extra dependency API
 
-**❓Can we test the same thing more efficiently❓**
+---
+
+### ❓Can we test the same thing more efficiently❓
+
+---
 
 ## 📝Summary
 
 ✅E2E UI teting with Cypress allows us to do functional testing of the web app
 
-✅However, it's extremely inneficient and there are better alternatives
+✅However, it's inneficient and there are better alternatives
 
 Wouldn't it be great to have this tested automatically through CI?
 
