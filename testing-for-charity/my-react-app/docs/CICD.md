@@ -56,6 +56,16 @@ jobs:
 ```
 3. Add New repository secrets for the repo
 
-![adding secrets](../../graphics/secrets.png)
+![adding secrets](../../../graphics/secrets.png)
 
 4. `git push` and watch it run
+
+## 🧪Current Test Coverage
+
+[Look here](TEST-COVERAGE.md)
+
+## 📝Summary
+
+✅We can use Github Workflows for free and easy continuous integration pipelines
+
+## ⏭️[Let's add visual tests](./VISUAL.md)
