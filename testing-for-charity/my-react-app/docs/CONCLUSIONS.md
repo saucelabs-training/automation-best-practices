@@ -13,6 +13,8 @@
 
 ## Thanks so much for your time and generosity 🙌👏
 
+![Thanks](../../../graphics/thanks.gif)
+
 This workshop serves 2 purposes:
 
 1. For me to give back to the testing world and help us all upskill 🚀

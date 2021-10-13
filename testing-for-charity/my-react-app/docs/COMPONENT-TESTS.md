@@ -8,17 +8,16 @@
 
 ## ⚙️ Setup
 
-1. Stop all servers from previous session (`Ctrl + C` everything)
-2. cd `my-react-app`
-3. `npm start`
-
-Open application at http://localhost:3000/
+Make sure that application is up and running
 
 ## 🧪Our Testing Strategy
 
 [Look here](TEST-COVERAGE.md)
 
+---
+
 ### ❓What are the disadvantages of functional UI tests?
+
 ---
 
 1. Need a browser
@@ -155,3 +154,16 @@ test('renders learn react link', () => {
 ✅A majority of the functionality of a modern JavaScript web app (React, Vue, Angular) can be tested with component tests in a virtual DOM. We did this with component tests
 
 ## CICD with component tests
+
+### 🏋️‍♀️Add component testing to our CI pipeline
+
+#### ❓Where in the `yml` would you add this snippet of code and why?
+
+```yml
+    - name: Run component tests 🔸
+      run: |
+        cd my-react-app
+        npm run test
+```
+
+## ⏭️[Conclusions](./CONCLUSIONS.md)
