@@ -2,11 +2,13 @@
 
 ## before you go!
 
+![Wait](../../../graphics/bye.gif)
+
 1. [Please donate whatever you feel appropriate.](https://www.gofundme.com/f/testing-for-charity) 100% of the donations go to the cause.
-2. 📫 Follow me as I will do many more Testing for Charity events
+2. 📫 Follow me as I will do many more Testing for Good events
   - [Youtube](https://youtube.com/ultimateqa)
   - [LinkedIn](https://www.linkedin.com/in/nikolayadvolodkin/)
-  - [Twitter](https://twitter.com/home)
+  - [Twitter](https://twitter.com/Nikolay_A00)
 3. Please give me [anonymous feedback on the workshop](https://docs.google.com/forms/d/e/1FAIpQLSf038xralb1Lo5ZCj8-b2CCOktD7WpfspKCvvpYcnq5wPRidQ/viewform?usp=sf_link)
 
 ## Thanks so much for your time and generosity 🙌👏

@@ -10,18 +10,17 @@
 
 [Look here](TEST-COVERAGE.md)
 
-
 ---
 
 ## ❓How do we check to make sure that the app looks as expected on web and mobile?
 
 ---
 
-[What is visual testing?](https://docs.google.com/presentation/d/13jYXXoKb36aFt1HLnNnAmsPqw9yaFhVrB4iFH_5_WkI/edit#slide=id.gcc181d5a54_0_284)
+![Visual testing](./../../../graphics/visual-testing.png)
 
 ## Our tools
 
-### [WebdrverIO](https://webdriver.io/)
+### [WebdriverIO](https://webdriver.io/)
 Next-gen browser and mobile automation test framework for Node.js
 
 ### [Screener](https://screener.io/)
@@ -88,3 +87,5 @@ Push the code to Github
 ✅Visual e2e testing is a simple and efficient way to ensure visual consistency cross-platform and cross-OS
 
 ✅We used WebdriverIO + Screener.io to write our visual e2e tests
+
+## ⏭️[Let's make our testing more efficient with component tests](./COMPONENT-TESTS.md)
