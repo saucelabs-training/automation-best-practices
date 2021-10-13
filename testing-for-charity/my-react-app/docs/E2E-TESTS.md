@@ -88,11 +88,7 @@ it('should click link',()=>{
 
 [Look here](TEST-COVERAGE.md)
 
----
-
-❓What if we wanted to test that the link opens in a new tab❓
-
----
+## How to test that the link opens in a new tab?
 
 👀 Working with 'target' attribute
 
