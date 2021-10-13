@@ -27,11 +27,11 @@ Make sure that application is up and running
 5. Need an extra dependency (Cypress)
 6. Need to learn extra dependency API
 
---
+---
 
-**❓Can we test the same thing more efficiently❓**
+### ❓Can we test the same thing more efficiently❓
 
---
+---
 
 ## Component tests
 
@@ -82,7 +82,7 @@ test('renders learn react link', () => {
 
 [Jest](https://jestjs.io/) is a JavaScript testing framework designed to ensure correctness of any JavaScript codebase. It allows you to write tests with an approachable, familiar and feature-rich API that gives you results quickly.
 
-### Run the component test
+### 🏋️‍♀️Run the component test
 
 1. Stop all servers
 2. `cd testing-for-charity/my-react-app/ && npm run test` 
@@ -103,7 +103,7 @@ test('renders learn react link', () => {
     })
 ```
 
-1. Make sure that you run `npm test` if it's not running already
+1. Run `npm test` in `testing-for-charity/my-react-app` if it's not running already
 2. Go to `src/__tests__/Exercise.test.js` and follow the instructions for `test('link has correct url'`
 3. Save and the test runs automatically
 
