@@ -35,20 +35,25 @@ Radical action is needed if we are to close the opportunity gap for Black women 
 
 ✅CICD with Github Actions
 
+✅component testing
+
 ## 🔧Technologies you will use
 
 1. ReactJS
 2. Cypress
 3. WebdriverIO
-4. Screener visual E2E testing
+4. Screener.io
 5. Sauce Labs
 6. Github Actions
+7. React Testing Library
 
 ## Table Of Contents
 
 * [E2E UI testing w/ Cypress](./my-react-app/docs/E2E-TESTS.md)
 * [CICD](./my-react-app/docs/CICD.md)
 * [Visual e2e tesing](./my-react-app/docs/VISUAL.md)
+* [Component testing](./my-react-app/docs/COMPONENT-TESTS.md)
+* [Conclusions](./my-react-app/docs/CONCLUSIONS.md)
 
 ## Key
 
@@ -71,8 +76,12 @@ Radical action is needed if we are to close the opportunity gap for Black women 
   - [LinkedIn](https://www.linkedin.com/in/nikolayadvolodkin/)
   - [Twitter](https://twitter.com/Nikolay_A00)
 
-## My Teaching Assistant
+## My TA: Josh Grant
 
+![Josh Grant](./../graphics/josh-grant.jpeg)
+
+Josh Grant is a test automation professional who has worked in this space for nearly a decade. In that time he has worked on automation at all levels, in a variety of languages, frameworks and organizations.
+Currently he is a solution architect at Sauce Labs, helping enterprise teams succeed with their test automation. He’s based in Toronto, Ontario.
 
 ## ⚙️ Setup
 
