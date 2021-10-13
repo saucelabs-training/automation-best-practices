@@ -69,7 +69,7 @@ Radical action is needed if we are to close the opportunity gap for Black women 
 - 📫 Follow me for testing and dev training
   - [Youtube](https://youtube.com/ultimateqa)
   - [LinkedIn](https://www.linkedin.com/in/nikolayadvolodkin/)
-  - [Twitter](https://twitter.com/home)
+  - [Twitter](https://twitter.com/Nikolay_A00)
 
 ## My Teaching Assistant
 

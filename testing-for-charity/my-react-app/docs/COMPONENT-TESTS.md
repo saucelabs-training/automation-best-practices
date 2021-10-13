@@ -1,4 +1,4 @@
-# Component
+# Component Testing
 
 ## 🧠You will learn
 
@@ -16,122 +16,7 @@ Open application at http://localhost:3000/
 
 ## 🧪Our Testing Strategy
 
-| Expected Behavior  | Tested? | Test Type  | Technologies  |
-|---|---|---|---|
-| Application renders  | 🙅‍♂️ | Component/UI/unit | React testing library, Jest |
-| Learn React link goes to correct location | 🙅‍♂️ |  |  |
-| Learn React link opens in new tab  | 🙅‍♂️ |  |  |
-| App looks as expected on Chrome + Safari on most popular resolution  | 🙅‍♂️ |   |   |
-| App looks as expected on iPhone 12, 12 Pro Max  | 🙅‍♂️ |   |   |
-| App is accessibility friendly  | 🙅‍♂️ |   |   |
-| Front-end performance is at least a B  | 🙅‍♂️ |   |   |
-| App is secure  | 🙅‍♂️ |   |   |
-| Multiple other testing types...  | 🙅‍♂️ |   |   |
-
-## What is the most basic test that we can write for our application?
-
-* How about a functional browser test sure that our app renders?
-
-## Cypress Overview
-
-"Fast, easy and reliable testing for anything that runs in a browser."([Cypress.io](https://www.cypress.io/))
-
-```bash
-cd testing-for-charity/my-react-app
-npx cypress open
-```
-
-💡 Tests live in `cypress/integration` folder
-
-### 🏋️‍♀️Write a Cypress test to make sure that our app opens.
-
-1. In your IDE open `cypress/integration/exercise.spec.js`
-2. Follow instructions to implement `it('loads')` test
-   
----
-
-### ❓What does this test validate?
-
----
-
-## 🧪Current Test Coverage
-
-| Expected Behavior  | Tested? | Test Type  | Technologies  |
-|---|---|---|---|
-| Application renders  | ✅ | Functional UI | Cypress |
-| Learn React link goes to correct location | 🙅‍♂️ |  |  |
-| Learn React link opens in new tab  | 🙅‍♂️ |  |  |
-| App looks as expected on Chrome + Safari on most popular resolution  | 🙅‍♂️ |   |   |
-| App looks as expected on iPhone 12, 12 Pro Max  | 🙅‍♂️ |   |   |
-| App is accessibility friendly  | 🙅‍♂️ |   |   |
-| Front-end performance is at least a B  | 🙅‍♂️ |   |   |
-| App is secure  | 🙅‍♂️ |   |   |
-| Multiple other testing types...  | 🙅‍♂️ |   |   |
-
----
-
-### ❓How do we ensure that the link is correct?
-
----
-
-## 🔗Testing links (the right way)
-
-Here's an e2e test to validate that a link works
-
-```js
-it('should click link',()=>{
-     cy.visit('/');
-     cy.get('.App-link').click().url().should('contain','ultimateqa.com');
- })
-```
----
-
-### ❓What is the problem with this test❓
-
----
-
-1. We should never need to test that a link is clickable, this is the browser's native behavior
-2. We should never need to test that a link opens a new tab
-
-### 🏋️‍♀️Write a test to ensure that the link will go to the correct location
-
-1. In your IDE open `cypress/integration/exercise.spec.js`
-2. Follow instructions to implement `it('link goes to ultimateqa')` test
-
-
----
-
-❓What is the exact validation of this test❓
-
----
-
-## 🧪Current Test Coverage
-
-| Expected Behavior  | Tested? | Test Type  | Technologies  |
-|---|---|---|---|
-| Application renders  | ✅ | Functional UI | Cypress |
-| Learn React link goes to correct location | 🙅‍♂️ |  |  |
-| Learn React link opens in new tab  | 🙅‍♂️ |  |  |
-
----
-
-❓What if we wanted to test that the link opens in a new tab❓
-
----
-
-👀 Working with 'target' attribute
-
-🏋️‍♀️Write a functional ui test to validate that the link opens in a new tab
-
-* Follow instructions in this test `it('should open link in new tab')`
-
-## 🧪Current Test Coverage
-
-| Expected Behavior  | Tested? | Test Type  | Technologies  |
-|---|---|---|---|
-| Application renders  | ✅ | Functional UI | Cypress |
-| Learn React link goes to correct location | ✅ | Functional UI | Cypress |
-| Learn React link opens in new tab  | 🙅‍♂️ |  |  |
+[Look here](TEST-COVERAGE.md)
 
 ### ❓What are the disadvantages of functional UI tests?
 ---
@@ -139,36 +24,15 @@ it('should click link',()=>{
 1. Need a browser
 2. Need a server
 3. Need to deal with network issues
-4. Test will be slower
+4. Test will be slower (100X to 1000X slower)
 5. Need an extra dependency (Cypress)
 6. Need to learn extra dependency API
 
+--
+
 **❓Can we test the same thing more efficiently❓**
 
-## 📝Summary
-
-✅E2E UI teting with Cypress allows us to do functional testing of the web app
-
-✅However, it's extremely inneficient and there are better alternatives
-
-Wouldn't it be great to have this tested automatically through CI?
-
-[Let's setup up CI](./CICD.md)
-
-
-
-
-
-
-| Expected Behavior  | Tested? | Test Type  | Technologies  |
-|---|---|---|---|
-| Application renders  | ✅ | Component | React testing library, Jest |
-| Learn React link goes to correct location | ✅ | Component | React testing library, Jest |
-| Learn React link opens in new tab  | ✅ | Component | React testing library, Jest |
-| App looks as expected on web and mobile  | 🙅‍♂️ |   |   |
-| Front-end performance is at least a B  | 🙅‍♂️ |   |   |
-| App is secure  | 🙅‍♂️ |   |   |
-
+--
 
 ## Component tests
 
@@ -181,9 +45,9 @@ There are a few ways to test React components. Broadly, they divide into two cat
 
 ### What is a component test?
 
-![Component tests](../graphics/../../graphics/component-diagram.jpeg)
+![Component tests](../../../graphics/component-diagram.jpeg)
 
-Source: [Yoni Goldberg](https://github.com/nadvolod/component-tests-workshop/blob/main/graphics/component-diagram.jpg)
+[Yoni Goldberg](https://github.com/nadvolod/component-tests-workshop/blob/main/graphics/component-diagram.jpg)
 
 #### Advantages of component tests
 
@@ -193,7 +57,7 @@ Source: [Yoni Goldberg](https://github.com/nadvolod/component-tests-workshop/blo
 
 ❌ network issues
 
-✅Tests run in ms
+✅Tests run in ms instead of sec
 
 ❌ extra dependency (Cypress)
 
@@ -202,12 +66,10 @@ Source: [Yoni Goldberg](https://github.com/nadvolod/component-tests-workshop/blo
 
 ### 🏋️‍♀️ Code the component test
 
-> Cypress doesn't support component tests yet. So we need to use other libraries.
-
-Our app was created using `create-react-app`. With this method, we automatically get a few cool things for testing:
-* @testing-library
+Our app was created using `create-react-app`. With this method, we automatically get a few tools for testing:
+* @testing-library/react
 * jest
-* And we get an automatic component test in `src/App.test.js`
+* And we get an automatic component test in `my-react-app/src/App.test.js`
 
 ```js
 //Exercise.test.js
@@ -217,15 +79,14 @@ test('renders learn react link', () => {
   expect(linkElement).toBeInTheDocument();
 });
 ```
+[React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) is a very light-weight solution for testing React components. It provides light utility functions on top of react-dom and react-dom/test-utils, in a way that encourages better testing practices.
 
-**Testing Library** is an opinionated framework that helps with component rendering and interactions.
-
-**Jest** is a test runner and provides a bunch of capabilities like matchers and snapshot testing
+[Jest](https://jestjs.io/) is a JavaScript testing framework designed to ensure correctness of any JavaScript codebase. It allows you to write tests with an approachable, familiar and feature-rich API that gives you results quickly.
 
 ### Run the component test
 
 1. Stop all servers
-2. In your current directory (my-react-app), execute `npm run test`. 
+2. `cd testing-for-charity/my-react-app/ && npm run test` 
 3. The tests should pass, even though our app isn't running.
 
 💡 'p' to filter tests down to a specific file
@@ -234,33 +95,29 @@ test('renders learn react link', () => {
 
 ### Testing links with component tests
 
-💡We don't need a browser to actually test a link click, so why not use a fast component test?
-
-1. Make sure that you run `npm test` if it's not running already
-2. Go to `src/__tests__/Exercise.test.js` and write a test that looks like this
+💡Remember this Cypress e2e link test? We can test the same thing without a browser or a server
 
 ```js
-test('link has correct url', () => {
-  //render our App component in a virtual DOM
-  render(<App />);
-  const linkElement = screen.getByTestId('learn-link')
-  expect(linkElement.href).toContain('ultimateqa');
-})
+    it('link goes to ultimateqa', ()=> {
+        cy.visit('/')
+        cy.get('.App-link').should('have.attr', 'href').and('include', 'ultimateqa.com')
+    })
 ```
-1. Save and the test runs automatically
 
+1. Make sure that you run `npm test` if it's not running already
+2. Go to `src/__tests__/Exercise.test.js` and follow the instructions for `test('link has correct url'`
+3. Save and the test runs automatically
 
----
-#### ❓What does the Cypress test validate that the component test does not❓
----
+### How to add a test id to our app
 
-### 💡How to add a test id to our app
-
-Ever wondered how easy it is to add an attribute to an HTML element? Let's provide a better locator for our app.
+- A `className` can change
+- Link text can also change
+- A `data-` attribute is uniquely created for testing purposes and has no impact on the functionality of the application
+ 
 
 #### 🏋️‍♀️Add a `data-testid` attribute to our element
 1. Open `my-react-app/src/App.js`
-2. In the `<a>` of the App component add a `data-testid` property
+2. In the `<a>` of the App component add `data-testid="learn-link"` property
 
 ```html
         <a
@@ -273,27 +130,28 @@ Ever wondered how easy it is to add an attribute to an HTML element? Let's provi
 ```
 
 3. Open `src/__tests__/Exercise.test.js`
-4. Update the test to have this line of code instead `const linkElement = screen.getByTestId('learn-link');`
+4. Update the test to use `getByTestId()` instead `const linkElement = screen.getByTestId('learn-link');`
 5. Save and the test will automatically rerun
 
-#### ❓Is our app fully tested❓
+### 🏋️‍♀️Add a test to validate that link opens in new tab
 
-| Expected Behavior  | Tested? | Test Type  | Technologies  |
-|---|---|---|---|
-| Application renders  | ✅ | Component | React testing library, Jest |
-| Learn React link goes to correct location | 🙅‍♂️ |  |  |
-| Learn React link opens in new tab  | 🙅‍♂️ |  |  |
-| App looks as expected on web and mobile  | 🙅‍♂️ |   |   |
-| Front-end performance is at least a B  | 🙅‍♂️ |   |   |
-| App is secure  | 🙅‍♂️ |   |   |
-| Multiple other testing types...  | 🙅‍♂️ |   |   |
+1. Open `src/__tests__/Exercise.test.js`
+2. Follow instructions in `getByTestId()` instead `const linkElement = screen.getByTestId('learn-link');`
 
+---
 
+#### ❓What does the Cypress test validate that the component test does not❓
+
+---
+
+## 🧪Our Test Coverage
+
+[Look here](./TEST-COVERAGE.md)
 
 ## 📝Summary
 
-✅An e2e test (Cypress) tests the connection from the front-end to the back-en
+✅An e2e test (Cypress) tests the connection from the front-end to the back-end
 
-✅Most of the functionality of a modern web app (React, Vue, Angular) can be tested with component tests in a virtual DOM. We did this by testing links, tabs, and correct HTML
+✅A majority of the functionality of a modern JavaScript web app (React, Vue, Angular) can be tested with component tests in a virtual DOM. We did this with component tests
 
-### Let's go implement [visual testing](./docs/VISUAL.md)
+## CICD with component tests
