@@ -63,7 +63,9 @@ Radical action is needed if we are to close the opportunity gap for Black women 
 
 ❓ this is a question for us to think and talk about. Try not to scroll beyond this question before we discuss
 
-## About Me
+## Your Instructor: Nikolay Advolodkin
+
+<img src="./../graphics/me-and-mia.jpg" alt="me" width="150"/>
 
 - 🔭 I’m the founder of [Ultimate QA](https://ultimateqa.com/)
 - 🏢 I’m a Sr Solutions Architect at Sauce Labs
@@ -72,13 +74,14 @@ Radical action is needed if we are to close the opportunity gap for Black women 
 - 😄 Pronouns: he/him
 - ⚡ Fun fact: I'm a vegan that's super pasionate about saving the planet, saving animals, and helping underpriveleged communities
 - 📫 Follow me for testing and dev training
+  - [JS Testing Newsletter](https://ultimateqa.ck.page/js-testing-tips)
   - [Youtube](https://youtube.com/ultimateqa)
   - [LinkedIn](https://www.linkedin.com/in/nikolayadvolodkin/)
   - [Twitter](https://twitter.com/Nikolay_A00)
 
-## My TA: Josh Grant
+## Your TA: Josh Grant
 
-![Josh Grant](./../graphics/josh-grant.jpeg)
+<img src="./../graphics/josh-grant.jpeg" alt="josh" width="150"/>
 
 Josh Grant is a test automation professional who has worked in this space for nearly a decade. In that time he has worked on automation at all levels, in a variety of languages, frameworks and organizations.
 Currently he is a solution architect at Sauce Labs, helping enterprise teams succeed with their test automation. He’s based in Toronto, Ontario.

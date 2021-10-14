@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('The React app', () => {
+describe('Solution', () => {
     it('loads', ()=> {
         cy.visit('/')
         cy.get('.App-link').should('be.visible')
