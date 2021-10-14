@@ -16,7 +16,9 @@
 
 ---
 
-![Visual testing](./../../../graphics/visual-testing.png)
+<img src="./../../../graphics/visual-testing.png" alt="visual-testing" width="500"/>
+
+<img src="./../../../graphics/visual-workflow.jpeg" alt="visual-testing" width="500"/>
 
 [Deeper discussion of visual testing](https://docs.google.com/presentation/d/13jYXXoKb36aFt1HLnNnAmsPqw9yaFhVrB4iFH_5_WkI/edit#slide=id.gcc181d5a54_0_284)
 

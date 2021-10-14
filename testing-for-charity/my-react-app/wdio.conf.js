@@ -1,6 +1,6 @@
 const visualOptions = {
     apiKey: process.env.SCREENER_API_KEY,
-    projectName: 'testing-for-charity'
+    projectName: 'testing-for-good'
 };
 const sauceOptions = {
     username: process.env.SAUCE_USERNAME,
