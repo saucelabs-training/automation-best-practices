@@ -18,6 +18,8 @@
 
 ![Visual testing](./../../../graphics/visual-testing.png)
 
+[Deeper discussion of visual testing](https://docs.google.com/presentation/d/13jYXXoKb36aFt1HLnNnAmsPqw9yaFhVrB4iFH_5_WkI/edit#slide=id.gcc181d5a54_0_284)
+
 ## Our tools
 
 ### [WebdriverIO](https://webdriver.io/)
