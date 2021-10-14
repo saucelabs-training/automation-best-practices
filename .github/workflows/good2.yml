@@ -1,0 +1,51 @@
+name: Testing for Good
+env:
+  SCREENER_API_KEY: ${{ secrets.SCREENER_API_KEY }}
+  SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
+  SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_ACCESS_KEY }}
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install dependencies 📦
+      #Using npm ci is generally faster than running npm install
+      run: |
+        cd testing-for-charity/my-react-app
+        npm ci
+    - name: Build the app 🏗
+      run: |
+        cd testing-for-charity/my-react-app
+        npm run build
+    # If we had more time, at this point we can actually deploy our app
+    # to a staging server and then run functional tests
+    - name: Start the app 📤
+      run: |
+        cd testing-for-charity/my-react-app
+        npm start &
+        npx wait-on --timeout 60000
+    - name: Run functional UI tests 🖥
+      run: |
+        cd testing-for-charity/my-react-app 
+        npm run cy:ci
+    - name: Run visual tests 👁
+      run: |
+        cd testing-for-charity/my-react-app
+        npm run test:visual
