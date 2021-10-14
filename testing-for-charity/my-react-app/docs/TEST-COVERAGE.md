@@ -3,7 +3,7 @@
 | Expected Behavior  | Tested? | Test Type  | Technologies  |
 |---|---|---|---|
 | Application renders  | ✅ | ui/e2e/functional | Cypress |
-| Link goes to correct location | 🙅‍♂️ |  |  |
+| Link goes to correct location | ✅ | ui/e2e/functional | Cypress |
 | Link opens in new tab  | 🙅‍♂️ |  |  |
 | App looks as expected on Chrome + Safari on most popular resolution  | 🙅‍♂️ |   |   |
 | App is accessibility friendly  | 🙅‍♂️ |   |   |
