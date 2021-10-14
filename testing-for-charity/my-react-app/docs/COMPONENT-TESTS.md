@@ -65,7 +65,10 @@ There are a few ways to test React components. Broadly, they divide into two cat
 
 ### 🏋️‍♀️ Code the component test
 
-Our app was created using `create-react-app`. With this method, we automatically get a few tools for testing:
+Our app was created using [create-react-app](https://create-react-app.dev/). 
+"Set up a modern web app by running one command"
+
+With this method, we automatically get a few tools for testing:
 * @testing-library/react
 * jest
 * And we get an automatic component test in `my-react-app/src/App.test.js`
