@@ -20,6 +20,18 @@
 
 <img src="./../../../graphics/visual-workflow.jpeg" alt="visual-testing" width="500"/>
 
+### Advantages of visual tests
+
+✅ Easier than e2e tests
+
+✅ Validate an entire page in a single LOC
+
+✅ Check how an app looks in different Browsers/Resolutions
+
+✅ More stable than e2e tests
+
+✅ Can help reduce the size of e2e suite
+
 [Deeper discussion of visual testing](https://docs.google.com/presentation/d/13jYXXoKb36aFt1HLnNnAmsPqw9yaFhVrB4iFH_5_WkI/edit#slide=id.gcc181d5a54_0_284)
 
 ## Our tools
