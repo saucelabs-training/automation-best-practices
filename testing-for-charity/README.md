@@ -33,7 +33,13 @@ Radical action is needed if we are to close the opportunity gap for Black women 
 
 ## 🔧Technologies you will use
 
-1. 
+1. ReactJS
+2. Cypress
+3. WebdriverIO
+4. Screener.io
+5. Sauce Labs
+6. Github Actions
+7. React Testing Library 
 
 ## Table Of Contents
 
