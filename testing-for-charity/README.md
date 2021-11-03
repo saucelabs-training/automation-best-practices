@@ -25,27 +25,15 @@ Radical action is needed if we are to close the opportunity gap for Black women 
 
 ## 🧠You will learn
 
-✅how to test a web application using different types of tests
-
-✅functional ui tests with Cypress
-
-✅visual e2e tests
-
-✅visual cross-browser tests
-
-✅CICD with Github Actions
-
-✅component testing
+* Create a framework for doing comprehensive web testing
+* Create functional browser tests using Selenium
+* Code visual e2e tests using Screener
+* Run in massive parallel (100s of tests in < 5 min)
+* Run in a CI pipeline
 
 ## 🔧Technologies you will use
 
-1. ReactJS
-2. Cypress
-3. WebdriverIO
-4. Screener.io
-5. Sauce Labs
-6. Github Actions
-7. React Testing Library
+1. 
 
 ## Table Of Contents
 
