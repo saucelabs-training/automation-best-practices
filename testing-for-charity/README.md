@@ -25,11 +25,17 @@ Radical action is needed if we are to close the opportunity gap for Black women 
 
 ## 🧠You will learn
 
-* Create a framework for doing comprehensive web testing
-* Create functional browser tests using Selenium
-* Code visual e2e tests using Screener
-* Run in massive parallel (100s of tests in < 5 min)
-* Run in a CI pipeline
+✅how to test a web application using different types of tests
+
+✅functional ui tests with Cypress
+
+✅visual e2e tests
+
+✅visual cross-browser tests
+
+✅CICD with Github Actions
+
+✅component testing
 
 ## 🔧Technologies you will use
 
