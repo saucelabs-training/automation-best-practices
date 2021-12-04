@@ -52,8 +52,9 @@ We will focus on a holistic approach of testing front-end and back-end, web and 
 
 ### 1. Install Node 14 LTS
   - Use NVM for this installation by [following instructions](https://github.com/nvm-sh/nvm#install--update-script)
-   -  It should be just a single command to run in our terminal
-   -  **!Don't forget to restart your terminal!**
+    - With VS Code, make sure that your terminal corresponds to the installation location of NVM. For example, if NVM was installed to `~/.bash_profile` then make sure that you are using the `bash` terminal and not `zsh` or another one
+    -  It should be just a single command to run in our terminal
+    -  **!Don't forget to restart your terminal!**
   - After installation, confirm install was correct by running `nvm` and seeing an output
   - Intall Node 14 with `nvm install 14` 
   
