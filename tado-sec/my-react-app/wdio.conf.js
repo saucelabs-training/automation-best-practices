@@ -1,10 +1,10 @@
 const visualOptions = {
     apiKey: process.env.SCREENER_API_KEY,
-    projectName: 'testing-for-good'
+    projectName: 'your-app',
 };
 const sauceOptions = {
     username: process.env.SAUCE_USERNAME,
-    accesskey: process.env.SAUCE_ACCESS_KEY
+    accesskey: process.env.SAUCE_ACCESS_KEY,
 };
 
 exports.config = {
@@ -13,13 +13,14 @@ exports.config = {
     key: process.env.SAUCE_ACCESS_KEY,
     region: 'us',
     services: [
-        ['sauce', {
-            sauceConnect: true
-        }]
+        [
+            'sauce',
+            {
+                sauceConnect: true,
+            },
+        ],
     ],
-    specs: [
-        './test/specs/**/*.js'
-    ],
+    specs: ['./test/specs/**/*.js'],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -45,8 +46,8 @@ exports.config = {
             },
             'sauce:visual': {
                 ...visualOptions,
-                viewportSize: '1366x768'
-            }
+                viewportSize: '1366x768',
+            },
         },
         {
             browserName: 'safari',
@@ -57,8 +58,8 @@ exports.config = {
             },
             'sauce:visual': {
                 ...visualOptions,
-                viewportSize: '1366x768'
-            }
+                viewportSize: '1366x768',
+            },
         },
         // // https://yesviz.com/iphones.php
         // // iphone12
@@ -111,6 +112,6 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
-    }
-}
+        timeout: 60000,
+    },
+};

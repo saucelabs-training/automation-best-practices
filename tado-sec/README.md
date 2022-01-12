@@ -19,7 +19,7 @@
 
 ## Table Of Contents
 
-- [E2E UI testing w/ Cypress](./my-react-app/docs/E2E-TESTS.md)
+- [E2E UI testing w/ WebdriverIO](./my-react-app/docs/E2E-TESTS.md)
 - [CICD](./my-react-app/docs/CICD.md)
 - [Visual e2e tesing](./my-react-app/docs/VISUAL.md)
 - [Component testing](./my-react-app/docs/COMPONENT-TESTS.md)
