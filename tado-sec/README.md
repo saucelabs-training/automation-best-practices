@@ -28,6 +28,13 @@
 - [Component testing](./my-react-app/docs/COMPONENT-TESTS.md)
 - [Conclusions](./my-react-app/docs/CONCLUSIONS.md)
 
+## Prerequisites
+
+* Node.JS installed
+* Sauce Labs account
+* Basic understanding of JavaScript
+* Your favorite IDE
+
 ## Key
 
 💡 this is a tip
