@@ -1,21 +1,24 @@
-# Testing with WebdriverIO on Sauce Workshop
+# Testing with WebdriverIO on Sauce
 
 ## 🧠You will learn
 
-✅how to test a web application using different types of tests
+✅sauce labs dashboard
 
 ✅functional ui tests with WebdriverIO
 
-✅visual e2e tests
+✅how to run tests in sauce labs ci grid
 
-✅visual cross-browser tests
+✅how to run tests against a local build
+
+✅how to run tests cross-browser and cross-platform
 
 ## 🔧Technologies you will use
 
 1. ReactJS
-2. WebdriverIO
-3. Screener.io
+2. WebdriverIO v7 async
 4. Sauce Labs
+5. Sauce Connect
+6. Node.JS
 
 ## Table Of Contents
 
@@ -53,50 +56,12 @@
 
 ### 1. Install Node 14 LTS
 
-1.  Use NVM for this installation by [following instructions](https://github.com/nvm-sh/nvm#install--update-script)
-    - It should be just a single command to run in our terminal
-      - **!Don't forget to restart your terminal!**
-2.  After installation, confirm install with `nvm --version`
-3.  Intall Node 14 with `nvm install 14`
+Please follow your organizations installation instructions
 
-  <br/>
-  <details>
-    <summary>
-      <strong>Click here</strong> to see an example output.
-    </summary>
-
-        Downloading and installing node v14.16.1...
-        Downloading https://nodejs.org/dist/v14.16.1/node-v14.16.1-darwin-x64.tar.xz...
-        ######################################################################### 100.0%
-        Computing checksum with shasum -a 256
-        Checksums matched!
-        Now using node v14.16.1 (npm v6.14.12)
-        Creating default alias: default -> 14 (-> v14.16.1)
-
-  </details>
-  <br/><br/>
-
-- Confirm node installation with `node --version` and seeing `v14.16.1` or similar
-- Confirm NVM is set to 14 for default by running the following commands:
+### 2.Clone this repo
 
 ```bash
-nvm list #will show all versions
-nvm use 14 #to use 14
-nvm alias default 14.16.x #to set it to the default
-```
-
-### 2.Clone and fork the repo
-
-1. Sign up for a free [Github account](https://github.com/)
-2. Fork this respository
-
-- Make sure you are logged into Github
-- click the Fork in the upper right of the Github.
-
-3. Clone your fork of the repository to your machine. Must have [Git installed](https://git-scm.com/downloads)
-
-```bash
-git clone URL_OF_YOUR_FORK
+git clone https://github.com/saucelabs-training/automation-best-practices
 ```
 
 4. **Navigate to the directory of where you cloned your repo**
