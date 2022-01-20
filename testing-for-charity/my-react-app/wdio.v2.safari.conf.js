@@ -1,6 +1,6 @@
 const visualOptions = {
     apiKey: 'd04ef66f-0046-42a3-960a-b9fcdeb7bc4c',
-    projectName: 'lululemon Chrome'
+    projectName: 'lululemon Safari'
 };
 const sauceOptions = {
     username: 'Oleksandr_Yuzhnyi',
@@ -9,10 +9,7 @@ const sauceOptions = {
 exports.config = {
 	region: process.env.REGION || 'us',
 	services: [['sauce']],
-	specs: [
-		'./test/specs/**/us.v2.spec.js',
-		'./test/specs/**/uk.v2.spec.js'
-	],
+	specs: ['./test/specs/**/**safari.spec.js'],
 	// Patterns to exclude.
 	exclude: [
 		// 'path/to/excluded/files'
@@ -25,16 +22,16 @@ exports.config = {
 	capabilities: [
 		//Desktop A 28%: https://www.w3schools.com/browsers/browsers_display.asp
 		{
-			browserName: 'chrome',
-			platformName: 'windows 10',
-			browserVersion: 'latest',
-			'sauce:options': {
-				...sauceOptions,
-			},
-			'sauce:visual': {
-				...visualOptions,
-				viewportSize: '1366x768',
-			},
+		  browserName: 'safari',
+		  platformName: 'macOS 11.00',
+		  browserVersion: 'latest',
+		  'sauce:options': {
+		    ...sauceOptions,
+		  },
+		  'sauce:visual': {
+		    ...visualOptions,
+		    viewportSize: '1366x768',
+		  },
 		},
 	],
 	//

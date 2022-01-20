@@ -20,7 +20,8 @@
 		"cy:open": "cypress open",
 		"cy:ci": "cypress run",
 		"test:visual": "wdio run ./wdio.conf.js",
-		"test:visual:v2": "wdio run ./wdio.v2.conf.js",
+		"test:visual:chrome": "wdio run ./wdio.v2.conf.js",
+		"test:visual:safari": "wdio run ./wdio.v2.safari.conf.js",
 		"test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch"
 	},
 	"eslintConfig": {
