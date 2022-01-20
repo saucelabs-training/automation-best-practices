@@ -1,13 +1,13 @@
 var homePage = require('../../../pageObject/home.page');
 
-describe('Australia region', async () => {
+describe('New Zeland region', async () => {
 	before(async () => {
-		await homePage.open('australia');
+		await homePage.open('newZeland');
 	});
 
 	it('HomePage check', async () => {
 		//init only with the country name
-		await homePage.initialize('australia');
+		await homePage.initialize('newZeland');
 		//the hardest part is ensuring that the page is in the correct state before a snapshot
 		await homePage.closeCountryModal();
 

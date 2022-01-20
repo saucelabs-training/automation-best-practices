@@ -1,14 +1,16 @@
 var homePage = require('../../../pageObject/home.page');
 
-describe('Australia region', async () => {
+describe('Deutschland region', async () => {
 	before(async () => {
-		await homePage.open('australia');
+		await homePage.open('deutschland');
 	});
 
 	it('HomePage check', async () => {
 		//init only with the country name
-		await homePage.initialize('australia');
+		await homePage.initialize('deutschland');
 		//the hardest part is ensuring that the page is in the correct state before a snapshot
+		await homePage.acceptCookies();
+
 		await homePage.closeCountryModal();
 
 		//snapshot should contain only the page/component name
@@ -17,7 +19,7 @@ describe('Australia region', async () => {
         await browser.refresh();
 
 		await $('#accessories-accordion').moveTo();
-		await $('#accessories-accordion').$('//a[@aria-label="Bags"]').click();
+		await $('#accessories-accordion').$('//a[@aria-label="Taschen"]').click();
 
 		await browser.execute('/*@visual.snapshot*/', 'Bags');
 

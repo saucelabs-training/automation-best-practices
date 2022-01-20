@@ -1,6 +1,6 @@
 var homePage = require('../../../pageObject/home.page');
 
-describe('Korea region url check', async () => {
+describe('Korea region', async () => {
 	before(async () => {
 		await homePage.open('korea');
 	});
@@ -10,16 +10,23 @@ describe('Korea region url check', async () => {
 		await homePage.initialize('korea');
 		//the hardest part is ensuring that the page is in the correct state before a snapshot
 		await homePage.closeCountryModal();
-		//makeScreenshot() is not the correct way to scroll into view
+
 		//snapshot should contain only the page/component name
-		browser.execute('/*@visual.snapshot*/', 'HomePage');
+		await browser.execute('/*@visual.snapshot*/', 'HomePage');
 
-		//any new snapshots can simply get added below
-		// However, this locator wasn't working for korea
-		// await (await homePage.navigationHeader()).selectFromAccessories('Bags');
-		// browser.execute('/*@visual.snapshot*/', 'Bags');
+        await browser.refresh();
 
-		//another snapshot would just get added here
+		await $('#accessories-accordion').moveTo();
+		await $('#accessories-accordion').$('//a[@aria-label="가방"]').click();
+
+		await browser.execute('/*@visual.snapshot*/', 'Bags');
+
+        await browser.refresh();
+
+		await $('#accessories-accordion').moveTo();
+		await $('#accessories-accordion').$('//a[@aria-label="요가 소도구"]').click();
+
+		await browser.execute('/*@visual.snapshot*/', 'Equipment');
 
 		const result = await browser.execute('/*@visual.end*/');
 		//don't change this assertion

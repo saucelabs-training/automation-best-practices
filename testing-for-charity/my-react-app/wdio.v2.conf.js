@@ -9,7 +9,13 @@ const sauceOptions = {
 exports.config = {
 	region: process.env.REGION || 'us',
 	services: [['sauce']],
-	specs: ['./test/specs/**/*v2.spec.js'],
+	specs: [
+		'./test/specs/**/hg.v2.spec.js',
+        './test/specs/**/au.v2.spec.js',
+        './test/specs/**/nz.v2.spec.js',
+        './test/specs/**/de.v2.spec.js',
+        './test/specs/**/jp.v2.spec.js'
+],
 	// Patterns to exclude.
 	exclude: [
 		// 'path/to/excluded/files'
@@ -63,6 +69,24 @@ exports.config = {
 	reporters: ['spec'],
 	mochaOpts: {
 		ui: 'bdd',
-		timeout: 120000,
+		timeout: 200000,
 	},
+	before: function (browser) {
+		browser.overwriteCommand('click', async function (origClickFunction, { force = false } = {}) {
+			if (!force) {
+				try {
+					return origClickFunction()
+				} catch (err) {
+					if (err.message.includes('not clickable at point')) {
+						await this.scrollIntoView()
+						return origClickFunction()
+					}
+					throw err
+				}
+			}
+			await browser.execute((el) => {
+				el.click()
+			}, this)
+		}, true)
+    },
 };

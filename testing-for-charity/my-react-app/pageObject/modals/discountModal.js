@@ -2,7 +2,7 @@ const Modal = require("./modal");
 
 class DiscountModal extends Modal {
     get modalSelector() {
-        return $('//*[contains(@class,"email-signup-popup show")]');
+        return $('//div[@class="header-img-overlay"]');
     }
 
     async closeModal() {

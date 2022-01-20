@@ -17,8 +17,7 @@ class HomePage extends Page {
     }
 
     async closeCountryModal() {
-        await browser.pause(2000);
-
+        browser.pause(2000);
         if(await this.countryModal.isDisplayed())
             await this.countryModal.closeModal();
 
@@ -26,14 +25,28 @@ class HomePage extends Page {
     }
 
     async closeDiscountModal() {
-        if(await this.discountModal.isDisplayed())
-            await this.discountModal.closeModal();
+        await browser.waitUntil(
+            async () => await this.discountModal.isDisplayed(),
+            {
+                timeout: 30000
+            }
+        );
+        await this.discountModal.closeModal();
         
-            return this;
+        return this;
     }
 
     async navigationHeader() {
         return await this.navHeader;
+    }
+
+    async acceptCookies() {
+        browser.pause(2000);
+
+        if(await $('//button[@id="onetrust-accept-btn-handler"]').isDisplayed())
+            await $('//button[@id="onetrust-accept-btn-handler"]').click();
+
+        return this;
     }
 }
 

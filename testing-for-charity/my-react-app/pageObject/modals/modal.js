@@ -1,6 +1,6 @@
 module.exports = class Modal {
     async close(selector) {
-        await selector.$('//button[@class="close"]').click();
+        await selector.$('//button[@class="close"]').click({force: true});
     }
 
     async isDisplayed(selector) {
