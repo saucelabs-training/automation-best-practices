@@ -1,10 +1,10 @@
 const visualOptions = {
-    apiKey: 'd04ef66f-0046-42a3-960a-b9fcdeb7bc4c',
-    projectName: 'lululemon Safari'
+	apiKey: process.env.SCREENER_API_KEY,
+	projectName: 'lululemon Safari',
 };
 const sauceOptions = {
-    username: 'Oleksandr_Yuzhnyi',
-    accesskey: 'b3d08698-2412-49d7-9d87-db6fab7e411b'
+	username: process.env.SAUCE_USERNAME,
+	accesskey: process.env.SAUCE_ACCESS_KEY,
 };
 exports.config = {
 	region: process.env.REGION || 'us',
@@ -22,16 +22,16 @@ exports.config = {
 	capabilities: [
 		//Desktop A 28%: https://www.w3schools.com/browsers/browsers_display.asp
 		{
-		  browserName: 'safari',
-		  platformName: 'macOS 11.00',
-		  browserVersion: 'latest',
-		  'sauce:options': {
-		    ...sauceOptions,
-		  },
-		  'sauce:visual': {
-		    ...visualOptions,
-		    viewportSize: '1366x768',
-		  },
+			browserName: 'safari',
+			platformName: 'macOS 11.00',
+			browserVersion: 'latest',
+			'sauce:options': {
+				...sauceOptions,
+			},
+			'sauce:visual': {
+				...visualOptions,
+				viewportSize: '1366x768',
+			},
 		},
 	],
 	//
@@ -52,21 +52,25 @@ exports.config = {
 		timeout: 200000,
 	},
 	before: function (browser) {
-		browser.overwriteCommand('click', async function (origClickFunction, { force = false } = {}) {
-			if (!force) {
-				try {
-					return origClickFunction()
-				} catch (err) {
-					if (err.message.includes('not clickable at point')) {
-						await this.scrollIntoView()
-						return origClickFunction()
+		browser.overwriteCommand(
+			'click',
+			async function (origClickFunction, { force = false } = {}) {
+				if (!force) {
+					try {
+						return origClickFunction();
+					} catch (err) {
+						if (err.message.includes('not clickable at point')) {
+							await this.scrollIntoView();
+							return origClickFunction();
+						}
+						throw err;
 					}
-					throw err
 				}
-			}
-			await browser.execute((el) => {
-				el.click()
-			}, this)
-		}, true)
-    },
+				await browser.execute((el) => {
+					el.click();
+				}, this);
+			},
+			true
+		);
+	},
 };

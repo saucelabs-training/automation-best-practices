@@ -1,18 +1,15 @@
 const visualOptions = {
-    apiKey: 'd04ef66f-0046-42a3-960a-b9fcdeb7bc4c',
-    projectName: 'lululemon Chrome'
+	apiKey: process.env.SCREENER_API_KEY,
+	projectName: 'lululemon Chrome',
 };
 const sauceOptions = {
-    username: 'Oleksandr_Yuzhnyi',
-    accesskey: 'b3d08698-2412-49d7-9d87-db6fab7e411b'
+	username: process.env.SAUCE_USERNAME,
+	accesskey: process.env.SAUCE_ACCESS_KEY,
 };
 exports.config = {
 	region: process.env.REGION || 'us',
 	services: [['sauce']],
-	specs: [
-		'./test/specs/**/us.v2.spec.js',
-		'./test/specs/**/uk.v2.spec.js'
-	],
+	specs: ['./test/specs/**/us.v2.spec.js', './test/specs/**/uk.v2.spec.js'],
 	// Patterns to exclude.
 	exclude: [
 		// 'path/to/excluded/files'
@@ -55,21 +52,25 @@ exports.config = {
 		timeout: 200000,
 	},
 	before: function (browser) {
-		browser.overwriteCommand('click', async function (origClickFunction, { force = false } = {}) {
-			if (!force) {
-				try {
-					return origClickFunction()
-				} catch (err) {
-					if (err.message.includes('not clickable at point')) {
-						await this.scrollIntoView()
-						return origClickFunction()
+		browser.overwriteCommand(
+			'click',
+			async function (origClickFunction, { force = false } = {}) {
+				if (!force) {
+					try {
+						return origClickFunction();
+					} catch (err) {
+						if (err.message.includes('not clickable at point')) {
+							await this.scrollIntoView();
+							return origClickFunction();
+						}
+						throw err;
 					}
-					throw err
 				}
-			}
-			await browser.execute((el) => {
-				el.click()
-			}, this)
-		}, true)
-    },
+				await browser.execute((el) => {
+					el.click();
+				}, this);
+			},
+			true
+		);
+	},
 };
