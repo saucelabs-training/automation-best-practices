@@ -1,0 +1,41 @@
+{
+	"name": "my-react-app",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@wdio/cli": "^7.13.0"
+	},
+	"scripts": {
+		"test:visual": "wdio run ./wdio.conf.js",
+		"test:visual:chrome": "wdio run ./wdio.chrome.conf.js",
+		"test:visual:safari": "wdio run ./wdio.safari.conf.js",
+		"test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@wdio/local-runner": "^7.13.0",
+		"@wdio/mocha-framework": "^7.13.0",
+		"@wdio/sauce-service": "^7.13.0",
+		"@wdio/spec-reporter": "^7.13.0",
+		"@wdio/sync": "^7.13.0",
+		"chromedriver": "^93.0.1",
+		"wdio-chromedriver-service": "^7.2.2"
+	}
+}
