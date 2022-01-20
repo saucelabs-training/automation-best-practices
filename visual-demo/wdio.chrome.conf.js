@@ -9,7 +9,7 @@ const sauceOptions = {
 exports.config = {
 	region: process.env.REGION || 'us',
 	services: [['sauce']],
-	specs: ['./test/specs/**/us.v2.spec.js', './test/specs/**/uk.v2.spec.js'],
+	specs: ['./test/specs/**/**.chrome.spec.js'],
 	// Patterns to exclude.
 	exclude: [
 		// 'path/to/excluded/files'
