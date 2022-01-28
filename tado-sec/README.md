@@ -121,4 +121,29 @@ Once the app is running, kill the server by executing `Ctrl + C` in command line
 
 ### 6. Run tests
 
+```bash
+cd tado-sec/my-react-app
+npm run test.sanity
+```
+
+<br/>
+<details>
+  <summary>
+    <strong>Click here</strong> to see an example output.
+  </summary>
+
+  <code>
+
+    wdio run test/configs/wdio.sanity.conf.js
+
+    Execution of 1 workers started at 2022-01-28T19:20:01.341Z
+
+    [0-0] RUNNING in chrome - /test/specs/sanity.spec.js
+    [0-0] PASSED in chrome - /test/specs/sanity.spec.js
+
+  </code>
+</details>
+
+<br/><br/>
+
 #### ✅👏Congratulations, your environment is ready!
