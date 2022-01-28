@@ -16,9 +16,9 @@
 
 1. ReactJS
 2. WebdriverIO v7 async
-4. Sauce Labs
-5. Sauce Connect
-6. Node.JS
+3. Sauce Labs
+4. Sauce Connect
+5. Node.JS
 
 ## Table Of Contents
 
@@ -30,10 +30,10 @@
 
 ## Prerequisites
 
-* Node.JS installed
-* Sauce Labs account
-* Basic understanding of JavaScript
-* Your favorite IDE
+- Node.JS installed
+- Sauce Labs account
+- Basic understanding of JavaScript
+- Your favorite IDE
 
 ## Key
 
@@ -78,7 +78,7 @@ git clone https://github.com/saucelabs-training/automation-best-practices
 ### 3.Install the app
 
 ```bash
-cd testing-for-charity/my-react-app
+cd tado-sec/my-react-app
 npm install && npm start
 ```
 
@@ -111,13 +111,14 @@ Once the app is running, kill the server by executing `Ctrl + C` in command line
 
 ### 4.Have an IDE installed that can handle NodeJS/JS (We will use [VSCode](https://code.visualstudio.com/Download))
 
-#### ✅👏Congratulations, your environment is ready!
+### 5.Set Your Sauce Labs Credentials
 
-### 5.Sign up for a free [Sauce account](https://saucelabs.com/sign-up)
-
-Get your [Screener account](https://saucelabs.com/demo-request-vt)
-
-### 6.Set Your Sauce Labs Credentials
+> It's a best practice to store environment variables in your
+> system environment variables follow instructions 👇
 
 - [MacOS/Linux](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables-on-macos-and-linux-systems)
 - [Windows](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables-on-windows-systems)
+
+### 6. Run tests
+
+#### ✅👏Congratulations, your environment is ready!
