@@ -30,10 +30,11 @@
 
 ## Prerequisites
 
+- **[🚨Setup steps completed before the workshop🚨](#setup)**
 - Node.JS installed
 - Sauce Labs account
 - Basic understanding of JavaScript
-- Your favorite IDE
+- Your favorite IDE (We will use [VSCode](https://code.visualstudio.com/Download))
 
 ## Key
 
@@ -59,26 +60,28 @@
   - [LinkedIn](https://www.linkedin.com/in/nikolayadvolodkin/)
   - [Twitter](https://twitter.com/Nikolay_A00)
 
-## ⚙️ Setup
+## Setup
 
 ### 1. Install Node 14 LTS
 
 Please follow your organizations installation instructions
 
-### 2.Clone this repo
+### 2.Clone or download the repo
 
 ```bash
 git clone https://github.com/saucelabs-training/automation-best-practices
 ```
 
-4. **Navigate to the directory of where you cloned your repo**
-
-`cd YOUR_FORK_DIR/automation-best-practices/testing-for-charity`
-
-### 3.Install the app
+### 3.Navigate to the directory of where you cloned your repo
 
 ```bash
-cd tado-sec/my-react-app
+cd YOUR_FORK_DIR/automation-best-practices/tado-sec
+```
+
+### 4.Install the app
+
+```bash
+cd my-react-app
 npm install && npm start
 ```
 
@@ -107,13 +110,11 @@ npm install && npm start
 
 **Don't worry about fixing any warnings that may appear during `npm install`**
 
-Once the app is running, kill the server by executing `Ctrl + C` in command line. We don't need the app running right now.
-
-### 4.Have an IDE installed that can handle NodeJS/JS (We will use [VSCode](https://code.visualstudio.com/Download))
+Once the app is running, you can stop it with `Ctrl + C` in command line. We don't need the app running right now.
 
 ### 5.Set Your Sauce Labs Credentials
 
-> It's a best practice to store environment variables in your
+> It's a best practice to store 3rd party credentials in your
 > system environment variables follow instructions 👇
 
 - [MacOS/Linux](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables-on-macos-and-linux-systems)
@@ -122,7 +123,7 @@ Once the app is running, kill the server by executing `Ctrl + C` in command line
 ### 6. Run tests
 
 ```bash
-cd tado-sec/my-react-app
+cd my-react-app
 npm run test.sanity
 ```
 
