@@ -16,7 +16,7 @@ exports.config = {
 			},
 		],
 	],
-	specs: ['./test/specs/**/sanity*.js'],
+	specs: ['./test/specs/**/sanity.spec.js'],
 	// Patterns to exclude.
 	exclude: [
 		// 'path/to/excluded/files'
@@ -41,7 +41,7 @@ exports.config = {
 	logLevel: 'error',
 	// bail (default is 0 - don't bail, run all tests).
 	bail: 0,
-	baseUrl: 'http://localhost:3000',
+	baseUrl: 'https://www.saucedemo.com',
 	//
 	// Default timeout for all waitFor* commands.
 	waitforTimeout: 10000,
@@ -53,13 +53,9 @@ exports.config = {
 	// Default request retries count
 	connectionRetryCount: 3,
 
-	framework: 'mocha',
+	framework: 'jasmine',
 	reporters: ['spec'],
-	//
-	// Options to be passed to Mocha.
-	// See the full list at http://mochajs.org/
-	mochaOpts: {
-		ui: 'bdd',
-		timeout: 60000,
+	jasmineOpts: {
+		defaultTimeoutInterval: 120000,
 	},
 };

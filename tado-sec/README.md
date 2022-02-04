@@ -22,11 +22,12 @@
 
 ## Table Of Contents
 
-- [E2E UI testing w/ Cypress](./my-react-app/docs/E2E-TESTS.md)
-- [CICD](./my-react-app/docs/CICD.md)
-- [Visual e2e tesing](./my-react-app/docs/VISUAL.md)
-- [Component testing](./my-react-app/docs/COMPONENT-TESTS.md)
-- [Conclusions](./my-react-app/docs/CONCLUSIONS.md)
+- [Run local tests]()
+- [Tests in Sauce]()
+- Sauce UI
+- [Sauce connect](https://docs.saucelabs.com/secure-connections/sauce-connect/)
+- [Cross-platform testing]()
+- [Super important, must-have resources]()
 
 ## Prerequisites
 
@@ -75,13 +76,13 @@ git clone https://github.com/saucelabs-training/automation-best-practices
 ### 3.Navigate to the directory of where you cloned your repo
 
 ```bash
-cd YOUR_FORK_DIR/automation-best-practices/tado-sec
+#pwd
+cd YOUR_FORK_DIR/automation-best-practices/tado-sec/my-react-app
 ```
 
 ### 4.Install the app
 
 ```bash
-cd my-react-app
 npm install && npm start
 ```
 
@@ -123,7 +124,6 @@ Once the app is running, you can stop it with `Ctrl + C` in command line. We don
 ### 6. Run tests
 
 ```bash
-cd my-react-app
 npm run test.sanity
 ```
 

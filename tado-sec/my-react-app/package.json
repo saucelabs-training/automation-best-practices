@@ -18,7 +18,8 @@
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"test.saucelabs.eu": "REGION=eu wdio wdio.saucelabs.conf.js",
-		"test.sanity": "wdio run test/configs/wdio.sanity.conf.js",
+		"test.sanity": "wdio test/configs/wdio.sanity.sauce.conf.js",
+		"test.local": "wdio run wdio.sanity.conf.js",
 		"test.debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch"
 	},
 	"eslintConfig": {
@@ -46,7 +47,7 @@
 		"@wdio/sauce-service": "^7.13.0",
 		"@wdio/spec-reporter": "^7.16.13",
 		"@wdio/sync": "^7.13.0",
-		"chromedriver": "^93.0.1",
+		"chromedriver": "^97.0.4",
 		"cypress": "^8.6.0",
 		"wdio-chromedriver-service": "^7.2.6"
 	}
