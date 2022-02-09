@@ -18,8 +18,9 @@
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"test.saucelabs.eu": "REGION=eu wdio wdio.saucelabs.conf.js",
+		"test.saucelabs": "wdio test/configs/wdio.sauce.conf.js",
 		"test.sanity": "wdio test/configs/wdio.sanity.sauce.conf.js",
-		"test.local": "wdio run wdio.sanity.conf.js",
+		"test.local.sauce": "wdio test/configs/wdio.localhost.sauce.conf.js",
 		"test.debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch"
 	},
 	"eslintConfig": {

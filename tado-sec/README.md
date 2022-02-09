@@ -22,8 +22,7 @@
 
 ## Table Of Contents
 
-- [Run local tests]()
-- [Tests in Sauce]()
+- [Test local apps in Sauce](/my-react-app/docs/LOCAL-SAUCE-TESTS.md)
 - Sauce UI
 - [Sauce connect](https://docs.saucelabs.com/secure-connections/sauce-connect/)
 - [Cross-platform testing]()

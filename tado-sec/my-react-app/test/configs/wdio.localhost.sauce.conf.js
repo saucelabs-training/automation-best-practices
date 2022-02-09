@@ -16,7 +16,7 @@ exports.config = {
 			},
 		],
 	],
-	specs: ['./test/specs/**/**.spec.js'],
+	specs: ['./test/specs/**/localhost.spec.js'],
 	// Patterns to exclude.
 	exclude: ['./test/specs/**/sanity.spec.js'],
 	//

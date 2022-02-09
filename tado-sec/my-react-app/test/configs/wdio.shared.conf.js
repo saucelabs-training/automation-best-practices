@@ -7,6 +7,7 @@ exports.config = {
 	// Specify Test Files
 	// ==================
 	specs: ['./test/specs/**/login.spec.js'],
+	exclude: ['./test/specs/**/sanity.spec.js'],
 	// ============
 	// Capabilities
 	// ============
@@ -15,7 +16,7 @@ exports.config = {
 	// ===================
 	// Test Configurations
 	// ===================
-	logLevel: 'silent',
+	logLevel: 'error',
 	bail: 0,
 	baseUrl: 'http://localhost:3000',
 	waitforTimeout: 10000,
