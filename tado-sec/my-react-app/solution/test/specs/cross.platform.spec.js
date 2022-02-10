@@ -1,11 +1,11 @@
 describe('Home page', () => {
-	it('renders', async () => {
-		await browser.url('/');
-		const elem = await $('[data-testid="main-img"]');
+	it('works with valid user', async () => {
+		await browser.url('');
+		const elem = await $('#log-button');
 		await elem.waitForDisplayed();
 	});
 	it('works with valid user', async () => {
-		await browser.url('https://www.saucedemo.com');
+		await browser.url('');
 		const elem = await $('#login-button');
 		await elem.waitForDisplayed();
 	});

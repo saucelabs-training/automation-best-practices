@@ -1,28 +1,22 @@
-# TESTING AN APP INSIDE OF YOUR NETWORK
+# TESTING CROSS-PLATFORM AND CROSS-BROWSER
 
 ## 🧠You will learn
 
-✅ How to test a local web application with functional browser tests (aka E2E tests)
+✅
 
-✅ Use WebdriverIO
+✅
 
-✅ Use Sauce Connect
-
-## ⚙️ Setup
-
-1. Stop all servers from previous session (`Ctrl + C` everything)
-2. cd `my-react-app`
-3. `npm start`
-
-Open application at http://localhost:3000/
-
-Explore the functionality of the app
+✅
 
 ## 🏋️‍♀️ Together, let's code your first WebdriverIO test!
+
+1. Copy and create a new file `wdio.cross.platform.sauce.conf.js` in `/test/configs`
 
 Our test will open the application and make sure it renders
 
 1. Write the test in `localhost.spec.js`
+
+Try to set the browser and os to Safari
 
 ```js
 describe('My local react app', () => {
@@ -37,9 +31,9 @@ describe('My local react app', () => {
 });
 ```
 
-2. Look at `test/configs/wdio.localhost.sauce.conf.js`
-3. Go to `package.json` and add a `script` `"test.local.sauce": "wdio test/configs/wdio.localhost.sauce.conf.js"`
-4. Now run your tests with `npm run test.local.sauce` in a new terminal. **Do not stop your app server!**
+1. Look at `test/configs/wdio.localhost.sauce.conf.js`
+2. Go to `package.json` and add a `script` `"test.local.sauce": "wdio test/configs/wdio.localhost.sauce.conf.js"`
+3. Now run your tests with `npm run test.local.sauce` in a new terminal. **Do not stop your app server!**
 
 **🚀 Congratulations, on your first WebdriverIO functional test!💃**
 

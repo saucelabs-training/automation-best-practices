@@ -1,8 +1,3 @@
-const sauceOptions = {
-	username: process.env.SAUCE_USERNAME,
-	accesskey: process.env.SAUCE_ACCESS_KEY,
-};
-
 exports.config = {
 	runner: 'local',
 	user: process.env.SAUCE_USERNAME,
@@ -32,9 +27,6 @@ exports.config = {
 			browserName: 'chrome',
 			platformName: 'windows 10',
 			browserVersion: 'latest',
-			'sauce:options': {
-				...sauceOptions,
-			},
 		},
 	],
 	// Level of logging verbosity: trace | debug | info | warn | error | silent
@@ -55,6 +47,7 @@ exports.config = {
 
 	framework: 'jasmine',
 	reporters: ['spec'],
+	services: ['sauce'],
 	jasmineOpts: {
 		defaultTimeoutInterval: 120000,
 	},
