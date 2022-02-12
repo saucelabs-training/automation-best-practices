@@ -8,32 +8,46 @@
 
 ✅
 
-## 🏋️‍♀️ Together, let's code your first WebdriverIO test!
+## 🏋️‍♀️ Work to run tests cross-browser and cross-platform
 
-1. Copy and create a new file `wdio.cross.platform.sauce.conf.js` in `/test/configs`
-
-Our test will open the application and make sure it renders
-
-1. Write the test in `localhost.spec.js`
-
-Try to set the browser and os to Safari
+1. Create a new test file `cross.platform.spec.js` in `/test/specs` and paste the code below
 
 ```js
-describe('My local react app', () => {
-	it('renders', async () => {
-		// navigate to the default url found in wdio.conf.js
-		await browser.url('/');
-		// create image variable
-		const image = await $('[data-testid="main-img"]');
-		// check if image is displayed
-		await image.waitForDisplayed();
+describe('Sauce Demo home page', () => {
+	it('loads', async () => {
+		// 1. Go to the home page
+		await browser.url('');
+		// 2. Create an element variable
+		const elem = await $('#login-button');
+		// 3. Verify the element is displayed
+		await elem.waitForDisplayed();
 	});
 });
 ```
 
-1. Look at `test/configs/wdio.localhost.sauce.conf.js`
-2. Go to `package.json` and add a `script` `"test.local.sauce": "wdio test/configs/wdio.localhost.sauce.conf.js"`
-3. Now run your tests with `npm run test.local.sauce` in a new terminal. **Do not stop your app server!**
+2. Create a new config file `wdio.cross.platform.sauce.conf.js` in `/test/configs`
+3. Copy the content from [here](../../solution/test/configs/wdio.cross.platform.sauce.conf.js) into your new file
+4. Let's understand the new config
+5. Add a script to `package.json` `"test.sauce.all": "wdio test/configs/wdio.cross.platform.sauce.conf.js"`
+6. Run the tests
+
+---
+
+## ❓How would you also run this test on Safari?
+
+---
+
+---
+
+## ❓ What about on a real mobile device like iPhone XS?
+
+---
+
+---
+
+## ❓ What about on a real mobile device like Samsung Galaxy S10?
+
+---
 
 **🚀 Congratulations, on your first WebdriverIO functional test!💃**
 

@@ -1,7 +1,7 @@
 // https://webdriver.io/docs/gettingstarted
 
 //add a build name to the sauce labs jobs
-const build = `WebdriverIO RDC offline test build-${new Date().getTime()}`;
+const build = `WebdriverIO cross platform build-${new Date().getTime()}`;
 
 exports.config = {
 	runner: 'local',
@@ -21,6 +21,7 @@ exports.config = {
 	// Capabilities
 	// You can find more about constructing the capabilities for real device testing here
 	// https://docs.saucelabs.com/dev/test-configuration-options/
+	// https://saucelabs.com/platform/platform-configurator
 	// ===================================================================================
 	capabilities: [
 		//Desktop A 28%: https://www.w3schools.com/browsers/browsers_display.asp

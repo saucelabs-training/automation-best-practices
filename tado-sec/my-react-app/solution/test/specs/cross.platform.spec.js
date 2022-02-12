@@ -1,12 +1,15 @@
-describe('Home page', () => {
-	it('works with valid user', async () => {
+describe('Sauce Demo home page', () => {
+	it('loads', async () => {
+		// 1. Go to the home page
 		await browser.url('');
-		const elem = await $('#log-button');
+		// 2. Create an element variable
+		const elem = await $('#login-button');
+		// 3. Verify the element is displayed
 		await elem.waitForDisplayed();
 	});
-	it('works with valid user', async () => {
+	it('fails', async () => {
 		await browser.url('');
-		const elem = await $('#login-button');
+		const elem = await $('#log-button');
 		await elem.waitForDisplayed();
 	});
 });

@@ -8,6 +8,9 @@ exports.config = {
 			'sauce',
 			{
 				sauceConnect: true,
+				sauceConnectOpts: {
+					noSslBumpDomains: 'all',
+				},
 			},
 		],
 	],
