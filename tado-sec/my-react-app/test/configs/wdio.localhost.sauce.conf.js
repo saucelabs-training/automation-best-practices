@@ -1,6 +1,5 @@
 const sauceOptions = {
-	username: process.env.SAUCE_USERNAME,
-	accesskey: process.env.SAUCE_ACCESS_KEY,
+	build: `WebdriverIO local build-${new Date().getTime()}`,
 };
 
 exports.config = {
@@ -30,6 +29,7 @@ exports.config = {
 			browserName: 'chrome',
 			platformName: 'windows 10',
 			browserVersion: 'latest',
+			// needed if you want to run with sauce connect
 			'sauce:options': {
 				...sauceOptions,
 			},
