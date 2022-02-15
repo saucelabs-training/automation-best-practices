@@ -20,6 +20,7 @@
 		"test.saucelabs.eu": "REGION=eu wdio wdio.saucelabs.conf.js",
 		"test.saucelabs": "wdio test/configs/wdio.sauce.conf.js",
 		"test.sanity": "wdio test/configs/wdio.sanity.sauce.conf.js",
+		"test.sanity.ci": "wdio test/configs/wdio.sanity.sauce.conf.js --logLevel debug",
 		"test.local.sauce": "wdio test/configs/wdio.localhost.sauce.conf.js",
 		"test.debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch"
 	},
