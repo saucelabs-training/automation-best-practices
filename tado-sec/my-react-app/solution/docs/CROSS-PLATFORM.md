@@ -18,7 +18,7 @@ describe('Sauce Demo home page', () => {
 		// 1. Go to the home page
 		await browser.url('');
 		// 2. Create an element variable
-		const elem = await $('#login-button');
+		const elem = await $('#log-button');
 		// 3. Verify the element is displayed
 		await elem.waitForDisplayed();
 	});
@@ -30,6 +30,12 @@ describe('Sauce Demo home page', () => {
 4. Let's understand the new config
 5. Add a script to `package.json` `"test.sauce.all": "wdio test/configs/wdio.cross.platform.sauce.conf.js"`
 6. Run the tests
+
+---
+
+## ❓ Why are the tests failing?
+
+---
 
 ---
 
@@ -49,13 +55,59 @@ describe('Sauce Demo home page', () => {
 
 ---
 
-**🚀 Congratulations, on your first WebdriverIO functional test!💃**
+---
+
+## What if you wanted devices matching a certain criteria?
+
+---
+
+```js
+		{
+			name: 'Run on deviceName regex iOS - iPhone [678]?.*',
+			browserName: 'safari',
+			deviceName: 'iPhone [678]?.*',
+			platformName: 'iOS',
+			// https://docs.saucelabs.com/dev/test-configuration-options/#cacheid
+			cacheId: 'vvqb5g7lr3', // See the capabilities url as mentioned above
+			// Specs are not mentioned here so it will run all tests
+			// from ./test/specs/
+			build,
+		},
+		{
+			name: 'Run on major iOS version - 13',
+			browserName: 'safari',
+			platformName: 'iOS',
+			platformVersion: '13',
+			// Extra caps
+			cacheId: 'bq9jvoctq7', // See the capabilities url as mentioned above
+			build,
+		},
+		{
+			name: 'Run iOS phone only',
+			browserName: 'safari',
+			platformName: 'iOS',
+			phoneOnly: true,
+			// Extra caps
+			cacheId: 'q96a2zipwp', // See the capabilities url as mentioned above
+			build,
+		},
+```
+
+Run the tests with `npm run test.sauce.all`
+
+## 🏋️‍♀️ Let's run in parallel
+
+1. Duplicate `cross.platform.spec`
+2. Leave only the passing test
+3. Update the appropriate `.conf.js`
+4. Run tests using `npm run test.sauce.all`
+
+**🚀 Congratulations, on your journey! 💃**
+
+<img src="https://media.giphy.com/media/xTiTne6OaK0fQAxXYk/giphy.gif" alt="congrats" width="400"/>
 
 ## 📝Summary
 
-1. Use WebdriverIO to do functional testing on your apps
-2. Use [Sauce Connect](https://docs.saucelabs.com/secure-connections/sauce-connect/) to test an app on an internal environment
-3. A `conf.js` file is used to configure WebdriverIO
-4. A `package.json` is where we put our scripts to easily run different things
+1.
 
-## ⏭️ Let's understand what happened in Sauce when we ran the test
+## ⏭️ Let's finish up

@@ -9,7 +9,7 @@ exports.config = {
 	key: process.env.SAUCE_ACCESS_KEY,
 	//default region is US unless set in command line
 	region: process.env.REGION || 'us',
-	specs: ['./test/specs/**/cross.platform.spec.js'],
+	specs: ['./test/specs/**/cross.platform.*'],
 	// Patterns to exclude.
 	exclude: ['./test/specs/**/sanity.spec.js'],
 	//
@@ -24,7 +24,6 @@ exports.config = {
 	// https://saucelabs.com/platform/platform-configurator
 	// ===================================================================================
 	capabilities: [
-		//Desktop A 28%: https://www.w3schools.com/browsers/browsers_display.asp
 		{
 			browserName: 'chrome',
 			platformName: 'windows 10',
@@ -55,7 +54,7 @@ exports.config = {
 			browserName: 'safari',
 			deviceName: 'iPhone [678]?.*',
 			platformName: 'iOS',
-			// Extra caps
+			// https://docs.saucelabs.com/dev/test-configuration-options/#cacheid
 			cacheId: 'vvqb5g7lr3', // See the capabilities url as mentioned above
 			// Specs are not mentioned here so it will run all tests
 			// from ./test/specs/
