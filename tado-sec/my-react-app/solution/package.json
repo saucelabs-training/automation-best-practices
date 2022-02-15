@@ -18,6 +18,7 @@
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"test.sanity": "wdio test/configs/wdio.sanity.sauce.conf.js",
+		"test.sanity.ci": "wdio test/configs/wdio.sanity.sauce.conf.js --logLevel debug",
 		"test.sauce.eu": "REGION=eu wdio test/configs/wdio.sanity.sauce.conf.js",
 		"test.sauce.all": "wdio test/configs/wdio.cross.platform.sauce.conf.js",
 		"test.sauce.local": "wdio test/configs/wdio.localhost.sauce.conf.js",
