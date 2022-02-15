@@ -41,7 +41,7 @@ describe('My local react app', () => {
 3. Go to `package.json` and add a `script` `"test.local.sauce": "wdio test/configs/wdio.localhost.sauce.conf.js"`
 4. Now run your tests with `npm run test.local.sauce` in a new terminal. **Do not stop your app server!**
 
-**🚀 Congratulations, on your first WebdriverIO functional test!💃**
+**🚀 Congratulations, on your WebdriverIO functional test!💃**
 
 ## 📝Summary
 
