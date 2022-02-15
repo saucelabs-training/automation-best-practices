@@ -53,4 +53,5 @@ jobs:
       run: |
         npm start &
         npx wait-on --timeout 60000
-    - run: npm run test.sanity
+      # it's very useful to have extra logging in a ci execution
+    - run: npm run test.sanity.ci
