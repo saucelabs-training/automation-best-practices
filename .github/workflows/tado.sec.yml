@@ -47,4 +47,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
+    - name: Build the app 🏗
+      run: npm run build
+    - name: Start the app 📤
+      run: |
+        npm start &
+        npx wait-on --timeout 60000
     - run: npm run test.sanity
