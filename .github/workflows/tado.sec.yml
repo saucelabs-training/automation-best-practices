@@ -24,18 +24,20 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    name: test-${{matrix.os}}-${{node-version}}
+    strategy:
+      #fail-fast: false
+      matrix:
+        os: [windows-latest, macOS-latest]
+        node-version: [14.x, 16.x]
+    runs-on: ${{ matrix.os }}
+    
     defaults:
       run:
         working-directory: ./tado-sec/my-react-app/
     env:
       SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
       SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_ACCESS_KEY }}
-
-    strategy:
-      matrix:
-        node-version: [14.x, 16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
     - uses: actions/checkout@v2
