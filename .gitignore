@@ -109,3 +109,4 @@ dist
 my-react-app/cypress/screenshots/solution.spec.js/The React app -- should click link (failed).png
 automated-atomic-tests/cypress/screenshots/shopping-cart.spec.js/Shopping cart -- should add item to cart (failed).png
 tado-sec/.DS_Store
+tado-sec/my-react-app/package-lock.json
