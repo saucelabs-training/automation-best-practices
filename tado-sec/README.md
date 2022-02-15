@@ -121,6 +121,15 @@ Once the app is running, you can stop it with `Ctrl + C` in command line. We don
 - [MacOS/Linux](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables-on-macos-and-linux-systems)
 - [Windows](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables-on-windows-systems)
 
+> If you don't have access to set your environment variable credentials, then just hardcode them in `test/configs/wdio.sanity.sauce.conf.js` 👇
+
+```js
+exports.config = {
+	runner: 'local',
+	user: 'SAUCE_USERNAME',
+	key: 'SAUCE_ACCESS_KEY',
+```
+
 ### 6. Run tests
 
 ```bash
