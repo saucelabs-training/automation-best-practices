@@ -82,7 +82,8 @@ cd YOUR_FORK_DIR/automation-best-practices/tado-sec/my-react-app
 ### 4.Install the app
 
 ```bash
-npm install && npm start
+npm install
+npm start
 ```
 
 <br/>
