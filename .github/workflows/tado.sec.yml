@@ -24,7 +24,7 @@ on:
 jobs:
   build:
 
-    name: test-${{matrix.os}}-${{node-version}}
+    name: test-${{matrix.os}}-${{matrix.node-version}}
     strategy:
       #fail-fast: false
       matrix:
