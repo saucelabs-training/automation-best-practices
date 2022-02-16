@@ -26,7 +26,7 @@
 - [Sauce UI](https://accounts.saucelabs.com/am/XUI/#login/)
 - [Sauce connect](https://docs.saucelabs.com/secure-connections/sauce-connect/)
 - [Cross-platform testing](./my-react-app/solution/docs/CROSS-PLATFORM.md)
-- [Super important, must-have resources]()
+- [Super important, must-have resources](./my-react-app/solution/docs/CONCLUSIONS.md)
 
 ## Prerequisites
 

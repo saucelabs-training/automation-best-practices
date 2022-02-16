@@ -2,9 +2,9 @@
 
 ## 🧠You will learn
 
-✅
+✅ How to run tests cross-platform on web and mobile
 
-✅
+✅ How to run tests in parallel
 
 ✅
 
@@ -105,9 +105,5 @@ Run the tests with `npm run test.sauce.all`
 **🚀 Congratulations, on your journey! 💃**
 
 <img src="https://media.giphy.com/media/xTiTne6OaK0fQAxXYk/giphy.gif" alt="congrats" width="400"/>
-
-## 📝Summary
-
-1.
 
 ## ⏭️ Let's finish up

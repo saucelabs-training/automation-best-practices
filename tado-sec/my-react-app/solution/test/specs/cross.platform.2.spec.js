@@ -1,4 +1,4 @@
-describe('Sauce Demo home page', () => {
+describe('Sauce Demo passing', () => {
 	it('loads', async () => {
 		// 1. Go to the home page
 		await browser.url('');
