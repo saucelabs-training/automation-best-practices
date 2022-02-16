@@ -1,5 +1,6 @@
 const sauceOptions = {
 	build: `WebdriverIO local build-${new Date().getTime()}`,
+	// tunnelIdentifier: 'sc-proxy-tunnel',
 };
 
 exports.config = {
