@@ -6,20 +6,23 @@
 
 ✅ How to run tests in parallel
 
-✅
-
 ## 🏋️‍♀️ Work to run tests cross-browser and cross-platform
 
 1. Create a new test file `cross.platform.spec.js` in `/test/specs` and paste the code below
 
 ```js
-describe('Sauce Demo home page', () => {
+describe('Sauce Demo is flaky', () => {
 	it('loads', async () => {
 		// 1. Go to the home page
 		await browser.url('');
 		// 2. Create an element variable
-		const elem = await $('#log-button');
+		const elem = await $('#login-button');
 		// 3. Verify the element is displayed
+		await elem.waitForDisplayed();
+	});
+	it('fails', async () => {
+		await browser.url('');
+		const elem = await $('#log-button');
 		await elem.waitForDisplayed();
 	});
 });
@@ -33,7 +36,7 @@ describe('Sauce Demo home page', () => {
 
 ---
 
-## ❓ Why are the tests failing?
+## ❓ Why are the tests failing? 
 
 ---
 
@@ -105,5 +108,7 @@ Run the tests with `npm run test.sauce.all`
 **🚀 Congratulations, on your journey! 💃**
 
 <img src="https://media.giphy.com/media/xTiTne6OaK0fQAxXYk/giphy.gif" alt="congrats" width="400"/>
+
+## Questions?
 
 ## ⏭️ Let's finish up
