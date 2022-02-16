@@ -22,9 +22,10 @@ Explore the functionality of the app
 
 Our test will open the application and make sure it renders
 
-1. Write the test in `localhost.spec.js`
+1. Write the test in `test/specs/localhost.spec.js`
 
 ```js
+// https://webdriver.io/docs/api
 describe('My local react app', () => {
 	it('renders', async () => {
 		// navigate to the default url found in wdio.conf.js
@@ -39,7 +40,7 @@ describe('My local react app', () => {
 
 2. Look at `test/configs/wdio.localhost.sauce.conf.js`
 3. Go to `package.json` and add a `script` `"test.local.sauce": "wdio test/configs/wdio.localhost.sauce.conf.js"`
-4. Now run your tests with `npm run test.local.sauce` in a new terminal. **Do not stop your app server!**
+4. Now run your tests with `npm run test.sauce.local` in a new terminal. **Do not stop your app server!**
 
 **🚀 Congratulations, on your WebdriverIO functional test!💃**
 
