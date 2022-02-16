@@ -22,7 +22,7 @@
 
 ## Table Of Contents
 
-- [Test local apps in Sauce](/my-react-app/solution/docs/LOCAL-SAUCE-TESTS.md)
+- [Test local apps in Sauce](./my-react-app/solution/docs/LOCAL-SAUCE-TESTS.md)
 - [Sauce UI](https://accounts.saucelabs.com/am/XUI/#login/)
 - [Sauce connect](https://docs.saucelabs.com/secure-connections/sauce-connect/)
 - [Cross-platform testing](./my-react-app/solution/docs/CROSS-PLATFORM.md)
